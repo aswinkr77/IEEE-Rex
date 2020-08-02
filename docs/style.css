@@ -344,7 +344,7 @@ header ul li a:hover{
 .info-head{
     position: relative;
     top: 50%;
-    color: #dba51a;
+    color: black;
     font-family: 'Fredoka One', cursive;
     font-size: 40px;
     text-transform: uppercase;
@@ -387,17 +387,18 @@ header ul li a:hover{
 .events{
     position: relative;
     width: 100%;
-    height: 1500px;
+    height: 1280px;
     background-color: white;
     font-size: 30px;
+    border: 1px solid red;
 }
 
 .events h1{
     text-transform: uppercase;
     font-family: 'Recursive', sans-serif;
     color: black;
-    padding-top: 50px;
-    font-size: 60px;
+    padding-top: 30px;
+    font-size: 50px;
 }
 
 .col, .first-col, .second-col{
@@ -407,24 +408,27 @@ header ul li a:hover{
 
 .first-col{
     position: relative;
-    padding-top: 50px;
-    height: 650px;
+    padding-top: 15px;
+    height: 540px;
+    border: 1px solid purple;
 }
 
 .second-col{
     position: relative;
-    height: 650px;
+    height: 600px;
+    border: 1px solid purple;
 }
 
 .price{
     position: relative;
-    width: 30%;
+    width: 27%;
     float: left;
-    height: 575px;
+    height: 500px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px #cbd6cb;
     transition: box-shadow 0.5s ease;
     overflow: auto;
+    border: 1px solid green;
 }
 
 .price:hover{
@@ -433,13 +437,13 @@ header ul li a:hover{
 }
 
 .event-1, .event-3{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 5%;
+    margin-right: 3.2%;
 }
 
 .price h3{
-    font-size: 40px;
-    padding-top: 20px;
+    font-size: 35px;
+    padding-top: 15px;
 }
 
 .price ul{
@@ -452,12 +456,13 @@ header ul li a:hover{
 }
 
 .price ul li{
-    padding: 15px 10px 10px 0;
+    padding: 10px 10px 8px 0;
 }
 
 .price p{
-    padding: 20px 20px;
-    font-size: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
     line-height: 30px;
 }
 
@@ -466,7 +471,7 @@ header ul li a:hover{
 }
 
 .bt-rs{
-    padding-top: 20px;
+    padding-top: 10px;
     width: 100%;
     align-content: center;
 }
@@ -480,7 +485,7 @@ header ul li a:hover{
 }
 
 .bt{
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 .bt i{
@@ -496,7 +501,7 @@ header ul li a:hover{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .btn{
@@ -664,8 +669,9 @@ header ul li a:hover{
 .speakers{
     position: relative;
     width: 100%;
-    height: 1500px;
+    height: 1200px;
     background-color: white;
+    border: 1px solid purple;
 }
 
 /*Heading of the div speakers*/
@@ -673,7 +679,6 @@ header ul li a:hover{
 .speaker-head{
     text-transform: uppercase;
     font-size: 55px;
-    padding-bottom: 20px;
     padding-top: 20px;
     font-family: 'Playfair Display', serif;
 }
@@ -681,33 +686,34 @@ header ul li a:hover{
 .speakers-col .speakers-first, .speakers-second{
     width: 100%;
     margin: auto;
+    border: 1px solid blueviolet;
 }
 
 .speakers-first{
     position: relative;
-    height: 650px;
-    padding-top: 50px;
+    height: 550px;
+    border: 1px solid green;
 }
 
 .speakers-second{
     position: relative;
-    height: 650px;
+    height: 550px;
 }
 
 .speaker-img{
     width: 80%;
-    height: 350px;
+    height: 300px;
 }
 
 .speaker{
     position: relative;
-    width: 30%;
+    width: 28%;
     float: left;
-    height: 550px;
+    height: 500px;
     line-height: 27px;
-    top: 50px;
     transition: all 0.5s ease;
     overflow: auto;
+    border: 1px solid orange;
 }
 
 .speaker:hover{
@@ -723,9 +729,8 @@ header ul li a:hover{
     margin-right: 5%;
 }
 
-.speaker-3, .speaker-5{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+.speaker-3, .speaker-4, .speaker-5{
+    margin-left: 3.5%;
 }
 
 .speaker-name{
@@ -745,7 +750,7 @@ header ul li a:hover{
 .contact{
     position: relative;
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color: black;
     text-align: center;
 }
@@ -774,7 +779,7 @@ header ul li a:hover{
     transform: translate(-50%, -50%);
 }
 
-.contact h1{
+.contact .connect-us{
     font-size: 35px;
     padding-right: 40px;
 }
@@ -793,4 +798,186 @@ header ul li a:hover{
 
 .contact i:hover{
     color: #ff4508;
+}
+
+@media (min-width: 610px) and (max-width: 1270px){
+    .stay{
+        width: 350px;
+    }
+
+    .contact .connect-us{
+        padding-right: 7px;
+    }
+}
+
+@media (max-width:609px){
+    .contact{
+        height: 230px;
+    }
+
+    .stay{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact .connect-us{
+        padding-top: 7px;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 920px) and (max-width: 1110px){
+    .speakers{
+        height: 1700px;
+    }
+
+    .speakers-second{
+        height: 1100px;
+    }
+
+    .speaker{
+        width: 35%;
+    }
+
+    .speaker-1{
+        margin-left: 12.22%;
+    }
+
+    .speaker-3{
+        margin-left: 12.22%;
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+    .speaker-4{
+        margin-left: 0;
+        margin-bottom: 2%;
+    }
+
+    .speaker-5{
+        margin-top: 2%;
+        margin-left: 33.33%;
+        margin-bottom: 1%;
+    }
+}
+
+@media (min-width: 776px) and (max-width: 920px){
+    .speakers{
+        height: 1700px;
+    }
+
+    .speaker{
+        width: 44%;
+    }
+
+    .speakers-second{
+        height: 1100px;
+    }
+
+    .speaker-1, .speaker-2{
+        margin-left: 3.5%;
+        margin-right: 0;
+    }
+
+    .speaker-3, .speaker-4{
+        margin-bottom: 2%;
+    }
+
+    .speaker-5{
+        margin-top: 3%;
+        margin-left: 30%;
+    }
+
+    .speaker-head{
+        font-size: 48px;
+    }
+
+    .speaker-name{
+        font-size: 30px;
+    }
+
+    .speaker-desc{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 500px) and (max-width:775px){
+    .speakers{
+        height: 2800px;
+    }
+
+    .speaker{
+        width: 55%;
+    }
+
+    .speakers-first{
+        height: 1080px;
+    }
+
+    .speakers-second{
+        height: 1620px;
+    }
+
+    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
+        margin-left: 22%;
+        margin-bottom: 2%;
+    }
+
+    .speaker-2{
+        margin-top: 3%;
+    }
+
+    .speaker-head{
+        font-size: 42px;
+    }
+
+    .speaker-name{
+        font-size: 25px;
+    }
+
+    .speaker-desc{
+        font-size: 17px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 499px){
+    .speakers{
+        height: 2700px;
+    }
+
+    .speaker{
+        width: 68%;
+    }
+
+    .speakers-first{
+        height: 1030px;
+    }
+
+    .speakers-second{
+        height: 1580px;
+    }
+
+    .speaker-head{
+        font-size: 38px;
+    }
+
+    .speaker-name{
+        font-size: 22px;
+    }
+
+    .speaker-desc{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
+        margin-left: 16%;
+    }
+
+    .speaker-1, .speaker-3, .speaker-4, .speaker-5{
+        margin-bottom: 2%;
+    }
+
 }

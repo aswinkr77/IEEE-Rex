@@ -793,17 +793,22 @@ header ul li a:hover{
 
 @media (max-width:609px){
     .contact{
-        height: 230px;
+        height: 180px;
     }
 
     .stay{
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 140px;
     }
 
     .contact .connect-us{
         padding-top: 7px;
-        padding-right: 10px;
+        padding-left: 40px;
+        font-size: 28px;
+    }
+
+    .stay i{
+        font-size: 25px;
     }
 }
 

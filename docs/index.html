@@ -25,7 +25,7 @@
             </nav>
 
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+                <button onclick="myFunction()" class="dropbtn click"><i onClick="myFunction" class="click fas fa-bars"></i></button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#about">About Us</a>
                   <a href="#events">Events</a>
@@ -75,7 +75,7 @@
                 <div class="price event-1">
                     <h3>Event 1</h3>
                     <ul>
-                        <li><i class="fas fa-calendar-week"></i><span>22-02-2020</span></li>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
                         <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum</p>
@@ -92,7 +92,7 @@
                 <div class="price event-2">
                     <h3>Event 2</h3>
                     <ul>
-                        <li><i class="fas fa-calendar-week"></i><span>22-02-2020</span></li>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
                         <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum</p>
@@ -109,7 +109,7 @@
                 <div class="price event-3">
                     <h3>Event 3</h3>
                     <ul>
-                        <li><i class="fas fa-calendar-week"></i><span>22-02-2020</span></li>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
                         <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum</p>
@@ -128,7 +128,7 @@
                 <div class="price event-4">
                     <h3>Event 4</h3>
                     <ul>
-                        <li><i class="fas fa-calendar-week"></i><span>22-02-2020</span></li>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
                         <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum</p>
@@ -145,7 +145,7 @@
                 <div class="price event-5">
                     <h3>Event 5</h3>
                     <ul>
-                        <li><i class="fas fa-calendar-week"></i><span>22-02-2020</span></li>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
                         <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
                     </ul>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum</p>
@@ -245,7 +245,7 @@
 
             // Close the dropdown menu if the user clicks outside of it
             window.onclick = function(event){
-                if (!event.target.matches('.dropbtn')){
+                if (!event.target.matches('.click')){
                     var dropdowns = document.getElementsByClassName("dropdown-content");
                     var i;
                     for (i = 0; i < dropdowns.length; i++){

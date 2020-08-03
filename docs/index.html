@@ -11,7 +11,7 @@
 
     <body>
 
-        <header>
+        <header id="head">
                 <img class="logo-1" src="ieee-logo.png" alt="IEEE Logo">
                 <img class="logo-2" src="ieee-ras.png" alt="IEEE RAS Logo">
                 <img class="logo-3" src="ieee-rex.jpg" alt="IEEE REX Logo">
@@ -59,7 +59,11 @@
                     in robotics and automation.</p>
             </div>
 
-            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-lg"></i></button>
+            <a href="#head">
+                <div id="myBtn" class="mybtn">
+                    <i class="fas fa-arrow-up fa-lg"></i>
+                </div>
+            </a>
 
         </div>
 
@@ -222,10 +226,10 @@
             <div class="stay">
                 <ul>
                     <li><h1 class="connect-us">Connect With Us</h1></li>
-                    <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                    <li><a href="https://www.instagram.com/ieeesbrit" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="https://www.facebook.com/IEEESBRIT" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li><a href="https://twitter.com/ieeesbrit" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ieee-sb-rit-55a6631aa" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
                 </ul>
             </div>
 
@@ -235,18 +239,18 @@
         <script>
 
             /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
-            function myFunction() {
+            function myFunction(){
             document.getElementById("myDropdown").classList.toggle("show");
             }
 
             // Close the dropdown menu if the user clicks outside of it
-            window.onclick = function(event) {
-                if (!event.target.matches('.dropbtn')) {
+            window.onclick = function(event){
+                if (!event.target.matches('.dropbtn')){
                     var dropdowns = document.getElementsByClassName("dropdown-content");
                     var i;
-                    for (i = 0; i < dropdowns.length; i++) {
+                    for (i = 0; i < dropdowns.length; i++){
                         var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
+                        if (openDropdown.classList.contains('show')){
                         openDropdown.classList.remove('show');
                         }
                     }
@@ -254,15 +258,14 @@
             }
 
 
-
             /* Fixed button */
             mybutton = document.getElementById("myBtn");
 
-            window.onscroll = function() {scrollFunction()};
+            window.onscroll = function(){scrollFunction()};
 
             function scrollFunction() 
             {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
                 {
                     mybutton.style.display = "block";
                 }
@@ -272,11 +275,23 @@
                 }
             }
 
-            function topFunction() 
-            {
-                document.body.scrollTop = 0; // For Safari
-                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            }
+            //smooth scrolling
+            let anchorSelector = 'a[href^="#"]'; 
+      
+             
+            let anchorList = document.querySelectorAll(anchorSelector); 
+        
+            
+            anchorList.forEach(link =>{ 
+                link.onclick = function(e){ 
+    
+                    e.preventDefault(); 
+
+                    let destination = document.querySelector(this.hash); 
+
+                    destination.scrollIntoView({behavior: 'smooth'}); 
+                } 
+            });
 
             </script>
 

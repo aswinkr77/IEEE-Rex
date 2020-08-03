@@ -388,7 +388,7 @@ header ul li a:hover{
 .events{
     position: relative;
     width: 100%;
-    height: 1100px;
+    height: 1150px;
     background-color: white;
     font-size: 30px;
     border: 1px solid red;
@@ -411,19 +411,19 @@ header ul li a:hover{
 .first-col{
     position: relative;
     padding-top: 15px;
-    height: 500px;
+    height: 520px;
     border: 1px solid purple;
 }
 
 .second-col{
     position: relative;
-    height: 500px;
+    height: 520px;
     border: 1px solid purple;
 }
 
 .price{
     position: relative;
-    width: 27%;
+    width: 30%;
     float: left;
     height: 450px;
     background-color: white;
@@ -439,9 +439,9 @@ header ul li a:hover{
                 -2px -2px 2px 2px #cbd6cb;
 }
 
-.event-1, .event-3{
-    margin-left: 5%;
-    margin-right: 3.2%;
+.event-1, .event-2, .event-3{
+    margin-left: 2.4%;
+    margin-right: 0;
 }
 
 .price h3{
@@ -943,7 +943,7 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 500px) and (max-width:659px){
+@media (min-width: 550px) and (max-width:659px){
     .wrapper{
         top: 30%;
     }
@@ -959,9 +959,9 @@ header ul li a:hover{
     }
 }
 
-@media(max-width:499px){
+@media (max-width:549px){
     .tour, .tour img{
-        height: 320px;
+        height: 450px;
     }
 
     .wrapper{
@@ -969,12 +969,22 @@ header ul li a:hover{
     }
 
     .wrapper h1{
-        font-size: 45px;
+        font-size: 47px;
     }
 
     .virtual-button{
-        height: 80px;
-        width: 120px;
-        font-size: 30px;
+        height: 82px;
+        width: 125px;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1190px){
+    .events{
+        height: 1250px;
+    }
+    
+    .price{
+        height: 500px;
     }
 }

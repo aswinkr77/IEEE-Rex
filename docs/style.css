@@ -640,7 +640,7 @@ header ul li a:hover{
     outline: none;
     border: 0;
     background: none;
-    border-radius: 50px;
+    border-radius: 20px;
     border-bottom: 2px solid #717571;
     transition: all 0.5s ease;
     cursor: pointer;

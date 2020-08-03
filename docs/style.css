@@ -979,9 +979,13 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1190px){
+@media (min-width: 1000px) and (max-width: 1350px){
     .events{
         height: 1250px;
+    }
+
+    .first-col, .second-col{
+        height: 570px;
     }
     
     .price{

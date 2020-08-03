@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 *{
@@ -21,7 +15,7 @@ body{
     background-color: #000304;
     width: 100%;
     height: 100%;
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body::-webkit-scrollbar-track
@@ -50,7 +44,7 @@ nav li, nav a{
     text-decoration: none;
     color: #000304;
     font-size: 25px;
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 header{
@@ -359,7 +353,7 @@ header ul li a:hover{
     background-clip: text;
     color: transparent;
     font-size: 10vw;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Nunito', sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms,
              glow 2500ms linear infinite 2000ms;
 }
@@ -444,7 +438,7 @@ header ul li a:hover{
 
 .events h1{
     text-transform: uppercase;
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 200;
     color: black;
     padding-top: 30px;
@@ -471,12 +465,12 @@ header ul li a:hover{
     position: relative;
     width: 30%;
     float: left;
-    height: 450px;
+    height: 470px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px #cbd6cb;
     transition: box-shadow 0.5s ease;
     overflow: auto;
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .price:hover{
@@ -697,6 +691,7 @@ header ul li a:hover{
     line-height: 27px;
     transition: all 0.5s ease;
     overflow: auto;
+    justify-content: center;
 }
 
 .speaker:hover{
@@ -737,45 +732,88 @@ header ul li a:hover{
 .contact{
     position: relative;
     width: 100%;
-    height: 175px;
+    height: 600px;
     background-color: black;
     text-align: center;
+    color: white;
+}
+
+
+
+.quick{
+    position: relative;
+    width: 30%;
+    height: 500px;
+    float: left;
 }
 
 .stay{
     font-size: 22px;
     position: relative;
     background-color: black;
-    width: 55%;
-    height: 95px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: box-shadow 0.7s ease;
+    float: left;
+    width: 30%;
+    height: 500px;
 }
 
-.stay:hover{
-    border: 0;
-    box-shadow: 0 4px 0 0 greenyellow;
-}
-
-.contact ul{
+.address{
     position: relative;
-    top: 50%;
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+
+.quick, .stay, .address{
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.address-sec{
+    position: relative;
+    height: 250px;
+}
+
+.chair{
+    position: relative;
+    height: 250px;
+}
+
+.quick ul li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.quick li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.5s ease;
+}
+
+.quick li a:hover{
+    color: #ff4508;
+}
+
+.stay ul{
+    position: relative;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 }
 
-.contact .connect-us{
+.stay ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.stay .connect-us{
     font-size: 35px;
-    padding-right: 40px;
 }
 
-.contact ul li{
+/*.contact ul li{
     list-style: none;
     display: inline-block;
     color: white;
-}
+}*/
 
 .contact i{
     padding: 20px;
@@ -787,34 +825,46 @@ header ul li a:hover{
     color: #ff4508;
 }
 
-@media (min-width: 610px) and (max-width: 1270px){
-    .stay{
-        width: 350px;
-    }
-
-    .contact .connect-us{
-        padding-right: 7px;
-    }
+.address ul li{
+    list-style: none;
+    padding-top: 10px;
+    font-size: 20px;
 }
 
-@media (max-width:609px){
+.chair{
+    line-height: 40px;
+}
+
+.chair p{
+    font-size: 20px;
+}
+
+@media (max-width: 960px){
     .contact{
-        height: 180px;
+        height: 1000px;
+    }
+
+    .quick{
+        width: 90%;
+        margin-left: 4.5%;
     }
 
     .stay{
-        width: 350px;
-        height: 140px;
+        width: 90%;
+        margin-left: 4.5%;
     }
 
-    .contact .connect-us{
-        padding-top: 7px;
-        padding-left: 40px;
-        font-size: 28px;
+    .address{
+        width: 90%;
+        margin-left: 4.5%;
     }
 
-    .stay i{
-        font-size: 25px;
+    .quick{
+        height: 200px;
+    }
+
+    .stay{
+        height: 120px;
     }
 }
 
@@ -1037,21 +1087,21 @@ header ul li a:hover{
 
 @media (min-width: 1000px) and (max-width: 1350px){
     .events{
-        height: 1250px;
+        height: 1270px;
     }
 
     .first-col, .second-col{
-        height: 570px;
+        height: 580px;
     }
     
     .price{
-        height: 530px;
+        height: 550px;
     }
 }
 
 @media (min-width: 776px) and (max-width: 999px){
     .events{
-        height: 1720px;
+        height: 1800px;
     }
 
     .events h1{
@@ -1063,12 +1113,12 @@ header ul li a:hover{
     }
 
     .second-col{
-        height: 550px;
+        height: 620px;
     }
 
     .price{
         width: 40%;
-        height: 500px;
+        height: 530px;
     }
 
     .price h3{
@@ -1083,9 +1133,13 @@ header ul li a:hover{
         margin-left: 30%;
         margin-top: 3.5%;
     }
+
+    .event-4, .event-5{
+        margin-top: 3.5%;
+    }
 }
 
-@media (min-width: 500px) and (max-width: 775px){
+@media (min-width: 520px) and (max-width: 775px){
     .events{
         height: 2800px;
     }
@@ -1133,7 +1187,7 @@ header ul li a:hover{
     }
 }
 
-@media (max-width: 499px){
+@media (max-width: 519px){
     .events{
         height: 2720px;
     }
@@ -1143,7 +1197,7 @@ header ul li a:hover{
     }
 
     .price{
-        width: 80%;
+        width: 90%;
         height: 490px;
     }
 
@@ -1164,7 +1218,7 @@ header ul li a:hover{
     }
 
     .event-1, .event-2, .event-3, .event-4, .event-5{
-        margin-left: 9%;
+        margin-left: 5%;
     }
 
     .event-2, .event-3{
@@ -1256,11 +1310,11 @@ header ul li a:hover{
 
 @media (max-width:600px){
     .slides img{
-        height: 480px;
+        height: 450px;
     }
 }
 
-@media (max-width: 1130px){
+@media (max-width: 1220px){
     nav{
         display: none;
     }
@@ -1272,6 +1326,14 @@ header ul li a:hover{
         display: none;
     }
 
+    .logo-3{
+        padding-left: 13px;
+    }
+
+    .dropdown{
+        padding-left: 13px;
+    }
+
     .dropdown-content{
         font-size: 18px;
         min-width: 450px;
@@ -1279,7 +1341,7 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 1130px){
+@media (min-width: 1220px){
     .dropdown{
         display: none;
     }

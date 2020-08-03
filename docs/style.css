@@ -298,6 +298,7 @@ header ul li a:hover{
     width: 100%;
     height: 600px;
     background-color: white;
+    border: 1px solid pink;
 }
 
 .about-text{
@@ -305,7 +306,7 @@ header ul li a:hover{
     float: left;
     width: 50%;
     top: 50%;
-    height: 600px;
+    height: 570px;
     padding-top: 150px;
     transform: translateY(-50%);
     background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #000, transparent, transparent);
@@ -316,6 +317,7 @@ header ul li a:hover{
     font-family: "Source Sans Pro", sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms,
              glow 2500ms linear infinite 2000ms;
+    border: 1px solid greenyellow;
 }
 
 @keyframes reveal {
@@ -334,31 +336,32 @@ header ul li a:hover{
 }
 
 .info{
-    position: relative;
-    float: left;
-    width: 50%;
-    top: 50%;
-    height: 600px;
-    padding-top: 150px;
+    position: relative;;
 }
 
 .info-head{
     position: relative;
+    width: 40%;
+    margin-left: 5%;
     top: 50%;
+    float: left;
     color: black;
     font-size: 40px;
     text-transform: uppercase;
-    padding-top: 150px;
+    padding-top: 7%;
+    border: 1px solid black;
 }
 
 .info-para{
+    width: 40%;
+    float: left;
     color: black;
-    font-size: 25px;
+    margin-left: 5%;
+    font-size: 23px;
     padding-top: 30px;
-    line-height: 40px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-left: 30px;
+    line-height: 36px;
+    padding-top: 40px;
+    border: 1px solid yellow;
 }
 
 #myBtn {
@@ -1119,4 +1122,70 @@ header ul li a:hover{
         font-size: 16px;
     }
 
+}
+
+@media (min-width: 790px) and (max-width: 900px){
+    .info-para{
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .about-text{
+        top: 50%;
+        height: 500px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 789px){
+    .about{
+        height: 750px;
+    }
+
+    .about-text{
+        margin-top: 5%;
+        width: 100%;
+        height: 240px;
+        top: 10%;
+        padding-top: 50px;
+        font-size: 100px;
+    }
+
+    .info-head{
+        width: 80%;
+        margin-left: 9%;
+        font-size: 34px;
+    }
+
+    .info-para{
+        width: 80%;
+        margin-left: 9%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 699px){
+    .about{
+        height: 900px;
+    }
+
+    .about-text{
+        margin-top: 5%;
+        width: 100%;
+        height: 240px;
+        top: 10%;
+        padding-top: 50px;
+        font-size: 100px;
+    }
+
+    .info-head{
+        width: 80%;
+        margin-left: 9%;
+        font-size: 34px;
+    }
+
+    .info-para{
+        width: 80%;
+        margin-left: 9%;
+        font-size: 20px;
+    }
 }

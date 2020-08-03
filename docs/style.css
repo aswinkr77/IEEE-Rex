@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
 *{
     margin: 0;
@@ -20,6 +21,7 @@ body{
     background-color: #000304;
     width: 100%;
     height: 100%;
+    font-family: 'Recursive', sans-serif;
 }
 
 body::-webkit-scrollbar-track
@@ -345,7 +347,6 @@ header ul li a:hover{
     position: relative;
     top: 50%;
     color: black;
-    font-family: 'Fredoka One', cursive;
     font-size: 40px;
     text-transform: uppercase;
     padding-top: 150px;
@@ -387,7 +388,7 @@ header ul li a:hover{
 .events{
     position: relative;
     width: 100%;
-    height: 1280px;
+    height: 1100px;
     background-color: white;
     font-size: 30px;
     border: 1px solid red;
@@ -396,6 +397,7 @@ header ul li a:hover{
 .events h1{
     text-transform: uppercase;
     font-family: 'Recursive', sans-serif;
+    font-weight: 200;
     color: black;
     padding-top: 30px;
     font-size: 50px;
@@ -409,13 +411,13 @@ header ul li a:hover{
 .first-col{
     position: relative;
     padding-top: 15px;
-    height: 540px;
+    height: 500px;
     border: 1px solid purple;
 }
 
 .second-col{
     position: relative;
-    height: 600px;
+    height: 500px;
     border: 1px solid purple;
 }
 
@@ -423,12 +425,13 @@ header ul li a:hover{
     position: relative;
     width: 27%;
     float: left;
-    height: 500px;
+    height: 450px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px #cbd6cb;
     transition: box-shadow 0.5s ease;
     overflow: auto;
     border: 1px solid green;
+    font-family: 'Recursive', sans-serif;
 }
 
 .price:hover{
@@ -442,7 +445,7 @@ header ul li a:hover{
 }
 
 .price h3{
-    font-size: 35px;
+    font-size: 33px;
     padding-top: 15px;
 }
 
@@ -456,13 +459,16 @@ header ul li a:hover{
 }
 
 .price ul li{
-    padding: 10px 10px 8px 0;
+    padding: 8px 10px 8px 0;
+    font-size: 22px;
 }
 
 .price p{
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
     line-height: 30px;
 }
 
@@ -522,7 +528,7 @@ header ul li a:hover{
 }
 
 .event-4, .event-5{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .event-4{
@@ -678,9 +684,9 @@ header ul li a:hover{
 
 .speaker-head{
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 40px;
     padding-top: 20px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 .speakers-col .speakers-first, .speakers-second{
@@ -707,7 +713,7 @@ header ul li a:hover{
 
 .speaker{
     position: relative;
-    width: 28%;
+    width: 26%;
     float: left;
     height: 500px;
     line-height: 27px;
@@ -725,26 +731,30 @@ header ul li a:hover{
 }
 
 .speaker-1{
-    margin-left: 18%;
+    margin-left: 22%;
     margin-right: 5%;
 }
 
 .speaker-3, .speaker-4, .speaker-5{
-    margin-left: 3.5%;
+    margin-left: 5.5%;
 }
 
 .speaker-name{
-    font-size: 35px;
+    font-size: 26px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
 }
 
 .speaker-desc{
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: 600;
+}
+
+.speaker p{
+    font-weight: normal;
 }
 
 .contact{
@@ -867,7 +877,7 @@ header ul li a:hover{
     }
 
     .speaker{
-        width: 44%;
+        width: 42%;
     }
 
     .speakers-second{
@@ -875,12 +885,14 @@ header ul li a:hover{
     }
 
     .speaker-1, .speaker-2{
-        margin-left: 3.5%;
+        margin-left: 5%;
         margin-right: 0;
     }
 
     .speaker-3, .speaker-4{
         margin-bottom: 2%;
+        margin-right: 0;
+        margin-left: 5%;
     }
 
     .speaker-5{
@@ -889,16 +901,16 @@ header ul li a:hover{
     }
 
     .speaker-head{
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .speaker-name{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .speaker-desc{
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: normal;
     }
 }
 
@@ -908,7 +920,7 @@ header ul li a:hover{
     }
 
     .speaker{
-        width: 55%;
+        width: 52%;
     }
 
     .speakers-first{
@@ -929,15 +941,15 @@ header ul li a:hover{
     }
 
     .speaker-head{
-        font-size: 42px;
+        font-size: 36px;
     }
 
     .speaker-name{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .speaker-desc{
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 500;
     }
 }
@@ -948,11 +960,11 @@ header ul li a:hover{
     }
 
     .speaker{
-        width: 68%;
+        width: 70%;
     }
 
     .speakers-first{
-        height: 1030px;
+        height: 1040px;
     }
 
     .speakers-second{
@@ -960,15 +972,15 @@ header ul li a:hover{
     }
 
     .speaker-head{
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .speaker-name{
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .speaker-desc{
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
     }
 
@@ -977,7 +989,7 @@ header ul li a:hover{
     }
 
     .speaker-1, .speaker-3, .speaker-4, .speaker-5{
-        margin-bottom: 2%;
+        margin-bottom: 4%;
     }
 
 }

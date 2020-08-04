@@ -502,6 +502,10 @@ header ul li a:hover{
     text-align: justify;
 }
 
+.price p span{
+    font-weight: bolder;
+}
+
 .rs p{
     text-align: center;
 }

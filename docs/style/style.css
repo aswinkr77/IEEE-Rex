@@ -421,7 +421,8 @@ header ul li a:hover{
 .events{
     position: relative;
     width: 100%;
-    height: 1700px;
+    /*height: 1700px;*/
+    height: 830px;
     background-color: white;
     font-size: 30px;
 }
@@ -449,6 +450,7 @@ header ul li a:hover{
 .second-col{
     position: relative;
     height: 750px;
+    display: none;
 }
 
 .price{
@@ -471,6 +473,10 @@ header ul li a:hover{
 .event-1, .event-2, .event-3{
     margin-left: 2.4%;
     margin-right: 0;
+}
+
+.event-4, .event-5{
+    display: none;
 }
 
 .price h3{
@@ -665,7 +671,8 @@ header ul li a:hover{
 .speakers{
     position: relative;
     width: 100%;
-    height: 1750px;
+    /*height: 1750px;*/
+    height: 800px;
     background-color: white;
 }
 
@@ -691,6 +698,7 @@ header ul li a:hover{
 .speakers-second{
     position: relative;
     height: 800px;
+    display: none;
 }
 
 .speaker-img{
@@ -720,12 +728,19 @@ header ul li a:hover{
 }
 
 .speaker-1{
-    margin-left: 22%;
-    margin-right: 5%;
+    /*margin-left: 22%;
+    margin-right: 5%;*/
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .speaker-3, .speaker-4, .speaker-5{
     margin-left: 5.5%;
+    display: none;
+}
+
+.speaker-2{
+    display: none;
 }
 
 .speaker-name{
@@ -910,22 +925,24 @@ header ul li a:hover{
 
 @media (min-width: 970px) and (max-width: 1280px){
     .speakers{
-        height: 2400px;
+        /*height: 2400px;*/
+        height: 900px;
     }
 
     .speakers-second{
         height: 1500px;
+        display: none;
     }
 
     .speaker{
         width: 35%;
     }
 
-    .speaker-1{
+    /*.speaker-1{
         margin-left: 12.22%;
     }
 
-    .speaker-3{
+    /*.speaker-3{
         margin-left: 12.22%;
         margin-right: 5%;
         margin-bottom: 2%;
@@ -940,12 +957,12 @@ header ul li a:hover{
         margin-top: 2%;
         margin-left: 33.33%;
         margin-bottom: 1%;
-    }
+    }*/
 }
 
 @media (min-width: 776px) and (max-width: 969px){
     .speakers{
-        height: 2400px;
+        height: 900px;
     }
 
     .speaker{
@@ -956,7 +973,7 @@ header ul li a:hover{
         height: 1500px;
     }
 
-    .speaker-1, .speaker-2{
+    /*.speaker-1, .speaker-2{
         margin-left: 4%;
         margin-right: 0;
     }
@@ -970,7 +987,7 @@ header ul li a:hover{
     .speaker-5{
         margin-top: 3%;
         margin-left: 30%;
-    }
+    }*/
 
     .speaker-head{
         font-size: 40px;
@@ -988,7 +1005,8 @@ header ul li a:hover{
 
 @media (min-width: 550px) and (max-width:775px){
     .speakers{
-        height: 3700px;
+        /*height: 3700px;*/
+        height: 820px;
     }
 
     .speaker{
@@ -1000,7 +1018,7 @@ header ul li a:hover{
         height: 250px;
     }
 
-    .speakers-first{
+    /*.speakers-first{
         height: 1460px;
     }
 
@@ -1015,7 +1033,7 @@ header ul li a:hover{
 
     .speaker-2{
         margin-top: 3%;
-    }
+    }*/
 
     .speaker-head{
         font-size: 36px;
@@ -1033,7 +1051,8 @@ header ul li a:hover{
 
 @media (max-width: 549px){
     .speakers{
-        height: 3750px;
+        /*height: 3750px;*/
+        height: 835px;
     }
 
     .speaker{
@@ -1045,13 +1064,13 @@ header ul li a:hover{
         height: 220px;
     }
 
-    .speakers-first{
+    /*.speakers-first{
         height: 1470px;
     }
 
     .speakers-second{
         height: 2180px;
-    }
+    }*/
 
     .speaker-head{
         font-size: 32px;
@@ -1066,13 +1085,13 @@ header ul li a:hover{
         font-weight: 500;
     }
 
-    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
+    /*.speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
         margin-left: 10%;
     }
 
     .speaker-1, .speaker-3, .speaker-4, .speaker-5{
         margin-bottom: 4%;
-    }
+    }*/
 }
 
 @media (min-width: 810px) and (max-width:1100px){
@@ -1089,9 +1108,51 @@ header ul li a:hover{
     }
 }
 
-@media (max-width: 789px){
+@media (min-width: 650px) and (max-width: 789px){
     .tour{
-        height: 950px;
+        height: 760px;
+
+    }
+
+    .v1{
+        display: none;
+    }
+
+    .vr{
+        width: 100%;
+        height: 250px;
+    }
+
+    .wrapper h1{
+        font-size: 45px;
+    }
+
+    .vr-desc{
+        width: 100%;
+        height: 560px;
+        top: -28%;
+        overflow: auto;
+    }
+
+    .vr-desc p{
+        font-size: 17px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .virtual-button{
+        bottom: 1.5%;
+    }
+
+    .virtual-button{
+        background-image: linear-gradient(to right, #ad2863, #cf6d99);
+        color: white;
+    }
+}
+
+@media (max-width: 649px){
+    .tour{
+        height: 760px;
 
     }
 
@@ -1111,7 +1172,7 @@ header ul li a:hover{
     .vr-desc{
         width: 100%;
         height: 580px;
-        top: -5%;
+        top: -25%;
         overflow: auto;
     }
 
@@ -1147,7 +1208,8 @@ header ul li a:hover{
 
 @media (min-width: 840px) and (max-width: 1169px){
     .events{
-        height: 2500px;
+        /*height: 2500px;*/
+        height: 1700px;
     }
 
     .events h1{
@@ -1160,6 +1222,7 @@ header ul li a:hover{
 
     .second-col{
         height: 800px;
+        display: none;
     }
 
     .price{
@@ -1182,6 +1245,7 @@ header ul li a:hover{
 
     .event-4, .event-5{
         margin-top: 3.5%;
+        display: none;
     }
 
     .bt-rs{
@@ -1191,7 +1255,8 @@ header ul li a:hover{
 
 @media (min-width: 520px) and (max-width: 839px){
     .events{
-        height: 3900px;
+        /*height: 3900px;*/
+        height: 2400px;
     }
 
     .events h1{
@@ -1213,6 +1278,7 @@ header ul li a:hover{
 
     .second-col{
         height: 1500px;
+        display: none;
     }
 
     .event-1, .event-2, .event-3, .event-4, .event-5{
@@ -1225,6 +1291,10 @@ header ul li a:hover{
 
     .event-4{
         margin-bottom: 2.5%;
+    }
+
+    .event-4, .event-5{
+        display: none;
     }
 
     .bt button{
@@ -1243,7 +1313,8 @@ header ul li a:hover{
 
 @media (max-width: 519px){
     .events{
-        height: 3850px;
+        /*height: 3850px;*/
+        height: 2350px;
     }
 
     .events h1{
@@ -1269,6 +1340,7 @@ header ul li a:hover{
 
     .second-col{
         height: 1500px;
+        display: none;
     }
 
     .event-1, .event-2, .event-3, .event-4, .event-5{
@@ -1285,6 +1357,10 @@ header ul li a:hover{
 
     .event-4{
         margin-bottom: 2.5%;
+    }
+
+    .event-4, .event-5{
+        display: none;
     }
 
     .bt button{

@@ -88,7 +88,7 @@
                             <i class="fas fa-rupee-sign"><span>100</span></i>
                         </div>
                         <div class="bt">
-                            <button class="btn">Register Now</button>
+                            <button class="btn" id="btn1">Register Now</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                             <i class="fas fa-rupee-sign"><span>100</span></i>
                         </div>
                         <div class="bt">
-                            <button class="btn">Register Now</button>
+                            <button class="btn" id="btn2">Register Now</button>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                             <i class="fas fa-rupee-sign"><span>100</span></i>
                         </div>
                         <div class="bt">
-                            <button class="btn">Register Now</button>
+                            <button class="btn" id="btn3">Register Now</button>
                         </div>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                             <i class="fas fa-rupee-sign"><span>100</span></i>
                         </div>
                         <div class="bt">
-                            <button class="btn">Register Now</button>
+                            <button class="btn" id="btn4">Register Now</button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
                             <i class="fas fa-rupee-sign"><span>100</span></i>
                         </div>
                         <div class="bt">
-                            <button class="btn">Register Now</button>
+                            <button class="btn" id="btn5">Register Now</button>
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                 <h1>Virtual Tour</h1>
             </div>
 
-            <button class="virtual-button">Here</button>
+            <button class="virtual-button" id="virtualbtn">HERE</button>
 
         </div>
 
@@ -276,7 +276,7 @@
             document.getElementById("myDropdown").classList.toggle("show");
             }
 
-            // Close the dropdown menu if the user clicks outside of it
+            /* Close the dropdown menu if the user clicks outside of it*/
             window.onclick = function(event){
                 if (!event.target.matches('.click')){
                     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -308,7 +308,36 @@
                 }
             }
 
-            //smooth scrolling
+
+            /*Register Now Button*/
+            document.getElementById("btn1").onclick = function(){
+                location.href = "#";
+            }
+
+            document.getElementById("btn2").onclick = function(){
+                location.href = "#";
+            }
+
+            document.getElementById("btn3").onclick = function(){
+                location.href = "#";
+            }
+
+            document.getElementById("btn4").onclick = function(){
+                location.href = "#";
+            }
+
+            document.getElementById("btn5").onclick = function(){
+                location.href = "#";
+            }
+
+
+            /*Virtual Tour Button*/
+            document.getElementById("virtualbtn").onclick = function(){
+                location.href = "#";
+            }
+
+
+            /*smooth scrolling*/
             let anchorSelector = 'a[href^="#"]'; 
       
              

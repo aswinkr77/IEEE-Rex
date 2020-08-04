@@ -34,10 +34,10 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, 
-                        color-stop(0.44, rgb(122,153,217)),
-                        color-stop(0.72, rgb(73,125,189)),
-                        color-stop(0.86, rgb(28,58,148)));
+    background-image: -webkit-gradient(linear, left bottom, left top,
+                        color-stop(0.32, #f174fc),
+                        color-stop(0.50, #ac2eb8),
+                        color-stop(0.75, #640c6c));
 }
 
 nav li, nav a{
@@ -1190,7 +1190,7 @@ header ul li a:hover{
     }
 
     .btn{
-        background-color: #f08a5d;
+        background-image: linear-gradient(to right, #ad2863, #cf6d99);
         color: white;
     }
 }
@@ -1246,7 +1246,7 @@ header ul li a:hover{
     }
 
     .btn{
-        background-color: #f08a5d;
+        background-image: linear-gradient(to right, #ad2863, #cf6d99);
         color: white;
     }
 

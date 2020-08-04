@@ -346,14 +346,14 @@ header ul li a:hover{
     float: left;
     width: 50%;
     top: 50%;
-    height: 570px;
+    height: 450px;
     padding-top: 150px;
     transform: translateY(-50%);
     background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #000, transparent, transparent);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    font-size: 10vw;
+    font-size: 80px;
     font-family: 'Nunito', sans-serif;
     animation: reveal 3000ms ease-in-out forwards 200ms,
              glow 2500ms linear infinite 2000ms;
@@ -385,20 +385,9 @@ header ul li a:hover{
     top: 50%;
     float: left;
     color: black;
-    font-size: 40px;
-    text-transform: uppercase;
-    padding-top: 7%;
-}
-
-.info-para{
-    width: 40%;
-    float: left;
-    color: black;
-    margin-left: 5%;
     font-size: 23px;
-    padding-top: 30px;
-    line-height: 36px;
-    padding-top: 40px;
+    padding-top: 8%;
+    text-align: justify;
 }
 
 .mybtn{
@@ -432,7 +421,7 @@ header ul li a:hover{
 .events{
     position: relative;
     width: 100%;
-    height: 1150px;
+    height: 1700px;
     background-color: white;
     font-size: 30px;
 }
@@ -454,19 +443,19 @@ header ul li a:hover{
 .first-col{
     position: relative;
     padding-top: 15px;
-    height: 520px;
+    height: 750px;
 }
 
 .second-col{
     position: relative;
-    height: 520px;
+    height: 750px;
 }
 
 .price{
     position: relative;
     width: 30%;
     float: left;
-    height: 470px;
+    height: 675px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px #cbd6cb;
     transition: box-shadow 0.5s ease;
@@ -485,7 +474,7 @@ header ul li a:hover{
 }
 
 .price h3{
-    font-size: 33px;
+    font-size: 29px;
     padding-top: 15px;
 }
 
@@ -510,6 +499,11 @@ header ul li a:hover{
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
+    text-align: justify;
+}
+
+.rs p{
+    text-align: center;
 }
 
 .price ul span{
@@ -518,27 +512,14 @@ header ul li a:hover{
 
 .bt-rs{
     position: absolute;
-    top: 70%;
+    top: 85%;
     width: 100%;
     align-content: center;
     padding-top: 10px;
-
-}
-
-.bt-rs span{
-    font-size: 30px;
-}
-
-.bt-rs i{
-    font-size: 25px;
 }
 
 .bt{
     padding-top: 6px;
-}
-
-.bt i{
-    float: right;
 }
 
 .bt button{
@@ -654,7 +635,7 @@ header ul li a:hover{
 .speakers{
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 1750px;
     background-color: white;
 }
 
@@ -674,16 +655,16 @@ header ul li a:hover{
 
 .speakers-first{
     position: relative;
-    height: 550px;
+    height: 800px;
 }
 
 .speakers-second{
     position: relative;
-    height: 550px;
+    height: 800px;
 }
 
 .speaker-img{
-    width: 80%;
+    width: 90%;
     height: 300px;
 }
 
@@ -691,7 +672,7 @@ header ul li a:hover{
     position: relative;
     width: 26%;
     float: left;
-    height: 500px;
+    height: 700px;
     line-height: 27px;
     transition: all 0.5s ease;
     overflow: auto;
@@ -867,13 +848,13 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 920px) and (max-width: 1110px){
+@media (min-width: 970px) and (max-width: 1280px){
     .speakers{
-        height: 1700px;
+        height: 2400px;
     }
 
     .speakers-second{
-        height: 1100px;
+        height: 1500px;
     }
 
     .speaker{
@@ -902,28 +883,28 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 776px) and (max-width: 920px){
+@media (min-width: 776px) and (max-width: 969px){
     .speakers{
-        height: 1700px;
+        height: 2400px;
     }
 
     .speaker{
-        width: 42%;
+        width: 44%;
     }
 
     .speakers-second{
-        height: 1100px;
+        height: 1500px;
     }
 
     .speaker-1, .speaker-2{
-        margin-left: 5%;
+        margin-left: 4%;
         margin-right: 0;
     }
 
     .speaker-3, .speaker-4{
         margin-bottom: 2%;
         margin-right: 0;
-        margin-left: 5%;
+        margin-left: 4%;
     }
 
     .speaker-5{
@@ -945,9 +926,9 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 500px) and (max-width:775px){
+@media (min-width: 550px) and (max-width:775px){
     .speakers{
-        height: 2800px;
+        height: 3700px;
     }
 
     .speaker{
@@ -960,11 +941,11 @@ header ul li a:hover{
     }
 
     .speakers-first{
-        height: 1080px;
+        height: 1460px;
     }
 
     .speakers-second{
-        height: 1620px;
+        height: 2150px;
     }
 
     .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
@@ -990,9 +971,9 @@ header ul li a:hover{
     }
 }
 
-@media (max-width: 499px){
+@media (max-width: 549px){
     .speakers{
-        height: 2700px;
+        height: 3750px;
     }
 
     .speaker{
@@ -1005,11 +986,11 @@ header ul li a:hover{
     }
 
     .speakers-first{
-        height: 1040px;
+        height: 1470px;
     }
 
     .speakers-second{
-        height: 1580px;
+        height: 2180px;
     }
 
     .speaker-head{
@@ -1099,23 +1080,23 @@ header ul li a:hover{
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1350px){
+@media (min-width: 1170px) and (max-width: 1350px){
     .events{
-        height: 1270px;
+        height: 1800px;
     }
 
     .first-col, .second-col{
-        height: 580px;
+        height: 800px;
     }
     
     .price{
-        height: 550px;
+        height: 750px;
     }
 }
 
-@media (min-width: 776px) and (max-width: 999px){
+@media (min-width: 840px) and (max-width: 1169px){
     .events{
-        height: 1800px;
+        height: 2500px;
     }
 
     .events h1{
@@ -1123,16 +1104,16 @@ header ul li a:hover{
     }
 
     .first-col{
-        height: 1070px;
+        height: 1550px;
     }
 
     .second-col{
-        height: 620px;
+        height: 800px;
     }
 
     .price{
         width: 40%;
-        height: 530px;
+        height: 750px;
     }
 
     .price h3{
@@ -1151,11 +1132,15 @@ header ul li a:hover{
     .event-4, .event-5{
         margin-top: 3.5%;
     }
+
+    .bt-rs{
+        top: 88%;
+    }
 }
 
-@media (min-width: 520px) and (max-width: 775px){
+@media (min-width: 520px) and (max-width: 839px){
     .events{
-        height: 2800px;
+        height: 3900px;
     }
 
     .events h1{
@@ -1164,7 +1149,7 @@ header ul li a:hover{
 
     .price{
         width: 70%;
-        height: 500px;
+        height: 725px;
     }
 
     .price h3{
@@ -1172,11 +1157,11 @@ header ul li a:hover{
     }
 
     .first-col{
-        height: 1580px;
+        height: 2250px;
     }
 
     .second-col{
-        height: 1100px;
+        height: 1500px;
     }
 
     .event-1, .event-2, .event-3, .event-4, .event-5{
@@ -1199,11 +1184,15 @@ header ul li a:hover{
         background-image: linear-gradient(to right, #ad2863, #cf6d99);
         color: white;
     }
+
+    .bt-rs{
+        top: 88%;
+    }
 }
 
 @media (max-width: 519px){
     .events{
-        height: 2720px;
+        height: 3850px;
     }
 
     .events h1{
@@ -1212,7 +1201,7 @@ header ul li a:hover{
 
     .price{
         width: 90%;
-        height: 490px;
+        height: 730px;
     }
 
     .price h3{
@@ -1224,11 +1213,11 @@ header ul li a:hover{
     }
 
     .first-col{
-        height: 1550px;
+        height: 2250px;
     }
 
     .second-col{
-        height: 1050px;
+        height: 1500px;
     }
 
     .event-1, .event-2, .event-3, .event-4, .event-5{
@@ -1240,7 +1229,7 @@ header ul li a:hover{
     }
 
     .bt-rs{
-        top: 74%;
+        top: 87%;
     }
 
     .event-4{
@@ -1258,19 +1247,18 @@ header ul li a:hover{
 
 }
 
-@media (min-width: 790px) and (max-width: 900px){
-    .info-para{
-        width: 50%;
-        margin-left: 0;
+@media (min-width: 810px) and (max-width: 1050px){
+    .about-text{
+        width: 40%;
+        top: 45%;
     }
 
-    .about-text{
-        top: 50%;
-        height: 500px;
+    .info-head{
+        width: 50%;
     }
 }
 
-@media (min-width: 700px) and (max-width: 789px){
+@media (min-width: 600px) and (max-width: 809px){
     .about{
         height: 750px;
     }
@@ -1279,26 +1267,20 @@ header ul li a:hover{
         margin-top: 5%;
         width: 100%;
         height: 240px;
-        top: 10%;
+        top: 20%;
         padding-top: 50px;
-        font-size: 100px;
+        font-size: 60px;
     }
 
     .info-head{
         width: 80%;
         margin-left: 9%;
-        font-size: 34px;
+        font-size: 22px;
         padding-top: 0;
-    }
-
-    .info-para{
-        width: 80%;
-        margin-left: 9%;
-        font-size: 20px;
     }
 }
 
-@media(max-width: 699px){
+@media(max-width: 599px){
     .about{
         height: 830px;
     }
@@ -1307,22 +1289,16 @@ header ul li a:hover{
         margin-top: 5%;
         width: 100%;
         height: 240px;
-        top: 12%;
+        top: 17%;
         padding-top: 50px;
-        font-size: 100px;
+        font-size: 50px;
     }
 
     .info-head{
         width: 80%;
         margin-left: 9%;
-        font-size: 34px;
+        font-size: 20px;
         padding-top: 0;
-    }
-
-    .info-para{
-        width: 80%;
-        margin-left: 9%;
-        font-size: 18px;
     }
 }
 

@@ -710,7 +710,9 @@ header ul li a:hover{
 }
 
 .speaker:hover{
-    box-shadow: 0 15px 10px -5px #bdb2b1;
+    box-shadow: 0 15px 10px -5px #bdb2b1,
+                15px 0 10px -5px #bdb2b1,
+                -15px 0 10px -5px #bdb2b1;
 }
 
 .speaker-1, .speaker-2{
@@ -1007,7 +1009,7 @@ header ul li a:hover{
     }
 
     .speaker{
-        width: 70%;
+        width: 80%;
     }
 
     .speaker-img{
@@ -1032,12 +1034,12 @@ header ul li a:hover{
     }
 
     .speaker-desc{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
     }
 
     .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
-        margin-left: 16%;
+        margin-left: 10%;
     }
 
     .speaker-1, .speaker-3, .speaker-4, .speaker-5{
@@ -1061,7 +1063,7 @@ header ul li a:hover{
 
 @media (max-width: 789px){
     .tour{
-        height: 900px;
+        height: 950px;
 
     }
 
@@ -1082,8 +1084,13 @@ header ul li a:hover{
         width: 100%;
         height: 580px;
         top: -5%;
-        font-size: 14px;
         overflow: auto;
+    }
+
+    .vr-desc p{
+        font-size: 17px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .virtual-button{
@@ -1313,7 +1320,7 @@ header ul li a:hover{
     .info-head{
         width: 80%;
         margin-left: 9%;
-        font-size: 20px;
+        font-size: 18px;
         padding-top: 0;
     }
 }

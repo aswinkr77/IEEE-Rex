@@ -1194,10 +1194,16 @@ header ul li a:hover{
 
 @media (min-width: 1170px) and (max-width: 1350px){
     .events{
-        height: 1800px;
+        /*height: 1800px;*/
+        height: 1000px;
     }
 
-    .first-col, .second-col{
+    .first-col{
+        height: 800px;
+    }
+
+    .second-col{
+        display: none;
         height: 800px;
     }
     

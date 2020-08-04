@@ -633,11 +633,11 @@ header ul li a:hover{
     width: 200px;
     height: 120px;
     font-size: 50px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     outline: none;
     border: 0;
     background: none;
-    border-radius: 20px;
+    border-radius: 10px;
     border-bottom: 4px solid #717571;
     transition: all 0.5s ease;
     cursor: pointer;
@@ -1059,17 +1059,24 @@ header ul li a:hover{
     }
 
     .virtual-button{
-        height: 80px;
+        height: 65px;
         width: 120px;
-        font-size: 35px;
-        border: 2px solid #717571;
+        font-size: 30px;
+        color: white;
+        border: 1px solid #717571;
+        border: 0;
+        background-image: linear-gradient(to right, #ad2863, #cf6d99);
+    }
+
+    .virtual-button:hover{
+        border: 0;
+        box-shadow: 0px 1px 2px #cf6d99;
     }
 }
 
 @media (max-width:549px){
-
     .wrapper{
-        top: 25%;
+        top: 27%;
     }
 
     .wrapper h1{
@@ -1077,10 +1084,18 @@ header ul li a:hover{
     }
 
     .virtual-button{
-        height: 75px;
+        height: 50px;
         width: 110px;
-        font-size: 32px;
-        border: 1px solid #717571;
+        bottom: 9%;
+        font-size: 27px;
+        color: white;
+        border: 0;
+        background-image: linear-gradient(to right, #ad2863, #cf6d99);
+    }
+
+    .virtual-button:hover{
+        border: 0;
+        box-shadow: 0px 1px 2px #cf6d99;
     }
 }
 
@@ -1225,7 +1240,7 @@ header ul li a:hover{
     }
 
     .bt-rs{
-        top: 73%;
+        top: 74%;
     }
 
     .event-4{

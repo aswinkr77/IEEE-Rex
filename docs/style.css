@@ -516,7 +516,9 @@ header ul li a:hover{
 }
 
 .bt-rs{
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
+    top: 70%;
     width: 100%;
     align-content: center;
     padding-top: 10px;
@@ -626,9 +628,9 @@ header ul li a:hover{
 .virtual-button{
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 13%;
     transform: translateX(-50%);
-    width: 250px;
+    width: 200px;
     height: 120px;
     font-size: 50px;
     font-family: 'Nunito', sans-serif;
@@ -636,12 +638,13 @@ header ul li a:hover{
     border: 0;
     background: none;
     border-radius: 20px;
-    border-bottom: 2px solid #717571;
+    border-bottom: 4px solid #717571;
     transition: all 0.5s ease;
     cursor: pointer;
 }
 
 .virtual-button:hover{
+    border-bottom: 2px solid #717571;
     box-shadow: 0 2px 2px 2px #717571,
                 0 -2px 2px 2px #717571,
                 2px 0 2px 2px #717571,
@@ -1045,9 +1048,10 @@ header ul li a:hover{
     .virtual-button{
         bottom: 8%;
         height: 100px;
-        width: 200px;
-        font-size: 40px;
+        width: 160px;
+        font-size: 38px;
         border-radius: 40px;
+        border: 2px solid #717571;
     }
 }
 
@@ -1064,12 +1068,13 @@ header ul li a:hover{
         height: 80px;
         width: 120px;
         font-size: 35px;
+        border: 2px solid #717571;
     }
 }
 
 @media (max-width:549px){
     /*.tour, .tour img{
-        height: 450px;
+        height: 390px;
     }*/
 
     .wrapper{
@@ -1081,9 +1086,10 @@ header ul li a:hover{
     }
 
     .virtual-button{
-        height: 82px;
-        width: 125px;
+        height: 75px;
+        width: 110px;
         font-size: 32px;
+        border: 1px solid #717571;
     }
 }
 
@@ -1225,6 +1231,10 @@ header ul li a:hover{
 
     .event-2, .event-3{
         margin-top: 3.5%;
+    }
+
+    .bt-rs{
+        top: 73%;
     }
 
     .event-4{

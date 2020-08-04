@@ -140,7 +140,7 @@ header ul li a:hover{
 }
 
 .slides img{
-    height: 850px;
+    height: 100%;
     width: 100%;
 }
 
@@ -516,9 +516,11 @@ header ul li a:hover{
 }
 
 .bt-rs{
-    padding-top: 10px;
+    position: relative;
     width: 100%;
     align-content: center;
+    padding-top: 10px;
+
 }
 
 .bt-rs span{
@@ -559,7 +561,6 @@ header ul li a:hover{
     overflow: hidden;
     margin-bottom: 10px;
     transition: box-shadow 0.5s ease ;
-    
 }
 
 .btn:hover{
@@ -723,6 +724,7 @@ header ul li a:hover{
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 
 .speaker p{
@@ -1066,9 +1068,9 @@ header ul li a:hover{
 }
 
 @media (max-width:549px){
-    .tour, .tour img{
+    /*.tour, .tour img{
         height: 450px;
-    }
+    }*/
 
     .wrapper{
         top: 25%;
@@ -1309,9 +1311,9 @@ header ul li a:hover{
 }
 
 @media (max-width:600px){
-    .slides img{
+    /*.slides img{
         height: 450px;
-    }
+    }*/
 }
 
 @media (max-width: 1220px){

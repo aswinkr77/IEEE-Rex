@@ -46,14 +46,16 @@ nav li, nav a{
     font-size: 25px;
     font-family: 'Nunito', sans-serif;
 }
-
+.list-sec{
+    font-weight:bold;
+}
 header{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: 90px;
     background-color:#f7f7f7;
 }
 
@@ -80,6 +82,10 @@ nav li{
 
 header ul li a, .v-line, .logo{
     transition: all 0.2s ease-in 0s;
+}
+
+header ul li a{
+    color: #434343;
 }
 
 header ul li a:hover{
@@ -417,7 +423,22 @@ header ul li a:hover{
 .mybtn:hover{
     background-image: linear-gradient(to left, #d9689a, #ad2863, #640c6c);
 }
+.align-items-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+.event-para{
+    margin-top: 8px;
+}
+.price-info-ras{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 24px;
+    font-weight: bold;
 
+}
 .events{
     position: relative;
     width: 100%;
@@ -431,9 +452,10 @@ header ul li a:hover{
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-    color: black;
+    color:#434343;
     padding-top: 30px;
     font-size: 50px;
+    font-weight: bold;
 }
 
 .col, .first-col, .second-col{
@@ -544,7 +566,7 @@ header ul li a:hover{
     font-size: 20px;
 }
 
-.btn{
+/* .btn{
     border: 0;
     outline: none;
     border-bottom: 1px solid #717571;
@@ -554,11 +576,16 @@ header ul li a:hover{
     overflow: hidden;
     margin-bottom: 10px;
     transition: box-shadow 0.5s ease ;
+} */
+.btn{
+    background-image: linear-gradient(to right, #ad2863, #cf6d99);
+    color: white;
+    border-radius: 8px;
 }
 
-.btn:hover{
+/* .btn:hover{
     box-shadow: 0 2px 2px 1px #717571;
-}
+} */
 
 .event-4, .event-5{
     margin-top: 1%;
@@ -619,7 +646,7 @@ header ul li a:hover{
     font-weight: 600;
 }
 
-.virtual-button{
+/* .virtual-button{
     position: absolute;
     bottom: 9%;
     left: 50%;
@@ -634,6 +661,20 @@ header ul li a:hover{
     border-bottom: 2px solid #949191;
     transition: all 0.5s ease;
     font-family: 'Montserrat', sans-serif;
+} */
+.virtual-button{
+    background-image: linear-gradient(to right, #ad2863, #cf6d99);
+    color: white;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
 }
 
 .virtual-button:hover{
@@ -1377,6 +1418,7 @@ header ul li a:hover{
         background-image: linear-gradient(to right, #ad2863, #cf6d99);
         color: white;
     }
+    
 
 }
 

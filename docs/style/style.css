@@ -1,1319 +1,407 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    height: 100%;
-}
-
-body{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #000304;
-    width: 100%;
-    height: 100%;
-    font-family: 'Nunito', sans-serif;
-}
-
-body::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
-    border-radius: 10px;
-}
-
-body::-webkit-scrollbar
-{
-    width: 15px;
-    background-color: #F5F5F5;
-}
-
-body::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top,
-                        color-stop(0.32, #f174fc),
-                        color-stop(0.50, #ac2eb8),
-                        color-stop(0.75, #640c6c));
-}
-
-nav li, nav a{
-    text-decoration: none;
-    color: #000304;
-    font-size: 25px;
-    font-family: 'Nunito', sans-serif;
-}
-.list-sec{
-    font-weight:bold;
-}
-header{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 90px;
-    background-color:#f7f7f7;
-}
-
-nav{
-    display: inline-block;
-    width: 60%;
-}
-
-.logo-1, .logo-2, .logo-3{
-    cursor: pointer;
-}
-
-header ul{
-    list-style: none;
-    align-content: center;
-    float: right;
-    align-items: center;
-}
-
-nav li{
-    display: inline-block;
-    padding-right: 30px
-}
-
-header ul li a, .v-line, .logo{
-    transition: all 0.2s ease-in 0s;
-}
-
-header ul li a{
-    color: #434343;
-}
-
-header ul li a:hover{
-    color: #ff4508;
-}
-
-/* Dropdown Button */
-.dropbtn{
-    background-color: #f7f7f7;
-    color: black;
-    padding: 16px;
-    font-size: 27px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-  
-.dropbtn:hover, .dropbtn:focus{
-    background-color: #f1f1f1;
-}
-
-.dropdown{
-    position: relative;
-    display: inline-block;
-    right: 4%;
-}
-  
-.dropdown-content{
-    display: none;
-    position: absolute;
-    right: 10%;
-    background-color: #f1f1f1;
-    min-width: 450px;
-    font-size: 22px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-  
-.dropdown-content a:hover{
-    background-color: #ddd
-}
-  
-.show{
-    display:block;
-}
-
-.slides{
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: white;
-}
-
-.slides img{
-    height: 100%;
-    width: 100%;
-}
-
-.sign{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 50%;
-    background-image: radial-gradient(ellipse 50% 35% at 50% 50%, #649e9e, transparent);
-    transform: translate(-50%, -50%);
-    letter-spacing: 2;
-    left: 50%;
-    top: 50%;
-    font-family: "Clip";
-    text-transform: uppercase;
-    font-size: 7em;
-    color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #00fefe,
-                -0.2rem 0.1rem 1rem #00fefe, 0.2rem 0.1rem 1rem #00fefe,
-                 0 -0.5rem 2rem #28fafa, 0 0.5rem 3rem #28fafa;
-    animation: shine 2s forwards, flicker 3s infinite;
-}
-
-@keyframes blink{
-    0%, 22%, 36%, 75%{
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #9cf7f7,
-                    -0.2rem 0.1rem 1rem #9cf7f7, 0.2rem 0.1rem 1rem #9cf7f7,
-                     0 -0.5rem 2rem #28fafa, 0 0.5rem 3rem #28fafa;
-    }
-
-    28%, 33%{
-        color: #65f6f7;
-        text-shadow: none;
-    }
-
-    82%, 97% {
-        color: #03fcfe;
-        text-shadow: none;
-    }
-}
-
-.flicker{
-    animation: shine 2s forwards, blink 3s 2s infinite;
-}
-  
-.fast-flicker{
-    animation: shine 2s forwards, blink 10s 1s infinite;
-}
-
-@keyframes shine{
-    0%{
-        color: #019494;
-        text-shadow: none;
-    }
-
-    100%{
-        color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #9cf7f7,
-                    -0.2rem 0.1rem 1rem #9cf7f7, 0.2rem 0.1rem 1rem #9cf7f7,
-                     0 -0.5rem 2rem #28fafa, 0 0.5rem 3rem #28fafa;
-    }
-}
-
-@keyframes flicker{
-    from{
-        opacity: 1;
-    }
-  
-    4%{
-        opacity: 0.9;
-    }
-  
-    6%{
-        opacity: 0.85;
-    }
-  
-    8%{
-        opacity: 0.95;
-    }
-  
-    10%{
-        opacity: 0.9;
-    }
-  
-    11%{
-        opacity: 0.922;
-    }
-  
-    12%{
-        opacity: 0.9;
-    }
-  
-    14%{
-        opacity: 0.95;
-    }
-  
-    16%{
-        opacity: 0.98;
-    }
-  
-    17%{
-        opacity: 0.9;
-    }
-  
-    19%{
-        opacity: 0.93;
-    }
-  
-    20%{
-        opacity: 0.99;
-    }
-  
-    24%{
-        opacity: 1;
-    }
-  
-    26%{
-        opacity: 0.94;
-    }
-  
-    28%{
-        opacity: 0.98;
-    }
-  
-    37%{
-        opacity: 0.93;
-    }
-  
-    38%{
-        opacity: 0.5;
-    }
-  
-    39%{
-        opacity: 0.96;
-    }
-  
-    42%{
-        opacity: 1;
-    }
-  
-    44%{
-        opacity: 0.97;
-    }
-  
-    46%{
-        opacity: 0.94;
-    }
-  
-    56%{
-        opacity: 0.9;
-    }
-  
-    58%{
-        opacity: 0.9;
-    }
-  
-    60%{
-        opacity: 0.99;
-    }
-  
-    68%{
-        opacity: 1;
-    }
-  
-    70%{
-        opacity: 0.9;
-    }
-  
-    72%{
-        opacity: 0.95;
-    }
-  
-    93%{
-        opacity: 0.93;
-    }
-  
-    95%{
-        opacity: 0.95;
-    }
-  
-    97%{
-        opacity: 0.93;
-    }
-  
-    to{
-        opacity: 1;
-    }
-}
-
-.about{
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-color: white;
-}
-
-.about-text{
-    position: relative;
-    float: left;
-    width: 50%;
-    top: 50%;
-    height: 450px;
-    padding-top: 150px;
-    transform: translateY(-50%);
-    background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #000, transparent, transparent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 80px;
-    font-family: 'Nunito', sans-serif;
-    animation: reveal 3000ms ease-in-out forwards 200ms,
-             glow 2500ms linear infinite 2000ms;
-}
-
-@keyframes reveal {
-    80%{
-      letter-spacing: 8px;
-    }
-    100% {
-      background-size: 300% 300%;
-    }
-  }
-  @keyframes glow {
-    40% {
-      text-shadow: 0 0 8px #000;
-    }
-  }
-}
-
-.info{
-    position: relative;;
-}
-
-.info-head{
-    position: relative;
-    width: 40%;
-    margin-left: 5%;
-    top: 50%;
-    float: left;
-    color: black;
-    font-size: 20px;
-    padding-top: 8%;
-    text-align: justify;
-}
-
-.mybtn{
-    position: fixed;
-    display: none;
-    bottom: 20px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    z-index: 200;
-    border: none;
-    outline: none;
-    background-image: linear-gradient(to right, #ad2863, #640c6c);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 60px;
-    font-size: 18px;
-    transition: all 2s ease;
-}
-
-.mybtn i{
-    padding-top: 5px;
-}
-
-
-.mybtn:hover{
-    background-image: linear-gradient(to left, #d9689a, #ad2863, #640c6c);
-}
-.align-items-evenly{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 8px;
-}
-.event-para{
-    margin-top: 8px;
-}
-.price-info-ras{
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
-    margin-top: 24px;
-    font-weight: bold;
-
-}
-.events{
-    position: relative;
-    width: 100%;
-    /*height: 1700px;*/
-    height: 830px;
-    background-color: white;
-    font-size: 30px;
-}
-
-.events h1{
-    text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    color:#434343;
-    padding-top: 30px;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.col, .first-col, .second-col{
-    width: 100%;
-    margin: auto;
-}
-
-.first-col{
-    position: relative;
-    padding-top: 15px;
-    height: 750px;
-}
-
-.second-col{
-    position: relative;
-    height: 750px;
-    display: none;
-}
-
-.price{
-    position: relative;
-    width: 30%;
-    float: left;
-    height: 675px;
-    background-color: white;
-    box-shadow: 2px 2px 2px 2px #cbd6cb;
-    transition: box-shadow 0.5s ease;
-    overflow: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-.price:hover{
-    box-shadow: 2px 2px 2px 2px #cbd6cb,
-                -2px -2px 2px 2px #cbd6cb;
-}
-
-.event-1, .event-2, .event-3{
-    margin-left: 2.4%;
-    margin-right: 0;
-}
-
-.event-4, .event-5{
-    display: none;
-}
-
-.price h3{
-    font-size: 29px;
-    padding-top: 15px;
-}
-
-.price ul{
-    list-style: none;
-}
-
-.price i{
-    color: #640c6c;
-    padding-right: 10px;
-}
-
-.price ul li{
-    padding: 8px 10px 8px 0;
-    font-size: 22px;
-}
-
-.price p{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 30px;
-    text-align: justify;
-}
-
-.price p span{
-    font-weight: bolder;
-}
-
-.rs p{
-    text-align: center;
-}
-
-.price ul span{
-    color: black;
-}
-
-.bt-rs{
-    position: absolute;
-    top: 85%;
-    width: 100%;
-    align-content: center;
-    padding-top: 10px;
-}
-
-.bt{
-    padding-top: 6px;
-}
-
-.bt button{
-    position: relative;
-    width: 50%;
-    height: 60px;
-    cursor: pointer;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    border: 0;
-    outline: 0;
-}
-
-.btn{
-    background-image: linear-gradient(to right, #ad2863, #cf6d99);
-    color: white;
-    border-radius: 8px;
-}
-
-.btn:hover{
-    background-image:linear-gradient(to right, #640c6c, #640c6c);;
-}
-
-.event-4, .event-5{
-    margin-top: 1%;
-}
-
-.event-4{
-    margin-left: 18%;
-    margin-right: 5%;
-}
-
-.tour{
-    position: relative;
-    width: 100%;
-    height: 650px;
-    background-color: white;
-}
-
-.vr{
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 600px;
-}
-
-.vr img{
-    width: 90%;
-    height: 90%;
-}
-
-.wrapper{
-    left: 50%;
-    top: 50%;
-    z-index: 100;
-    transform: translate(-50%, -50%);
-    position: absolute;
-	text-align: center;
-}
-
-.vr-desc{
-    position: relative;
-    width: 50%;
-    height: 600px;
-    float: left;
-    font-family: 'Nunito', sans-serif;
-}
-
-.vr-desc p{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 19px;
-    text-align: justify;
-}
-
-.vr-desc p span{
-    font-weight: 600;
-}
-
-.virtual-button{
-    background-image: linear-gradient(to right, #ad2863, #cf6d99);
-    color: white;
-    position: absolute;
-    bottom: 9%;
-    left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    transition: background-image 0.5s ease;
-}
-
-.virtual-button:hover{
-    background-image:linear-gradient(to right, #640c6c, #640c6c);
-}
-
-.wrapper h1{
-    color: #fff;
-    font-size: 92px;
-    font-family: "ubuntu";
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Nunito', sans-serif;
-    background: linear-gradient(to right, #4a4747 10%, #949191 40%, #fffcfc 90%);
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 1.5s linear infinite;
-    display: inline-block;
-}
-
-@keyframes textclip {
-	to {
-		background-position: 200% center;
-	}
-}
-
-.speakers{
-    position: relative;
-    width: 100%;
-    /*height: 1750px;*/
-    height: 1100px;
-    background-color: white;
-}
-
-/*Heading of the div speakers*/
-
-.speaker-head{
-    text-transform: uppercase;
-    font-size: 40px;
-    padding-top: 20px;
-    font-family: 'Nunito', sans-serif;
-}
-
-.speakers-col .speakers-first, .speakers-second{
-    width: 100%;
-}
-
-.speakers-first{
-    position: relative;
-    height: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.speakers-second{
-    position: relative;
-    height: 800px;
-    display: none;
-}
-
-.speaker-img{
-    width: 255px;
-    height: 340px;
-}
-
-.speaker{
-    position: relative;
-    width: 30%;
-    float: left;
-    height: 900px;
-    line-height: 27px;
-    transition: all 0.5s ease;
-    overflow: auto;
-    justify-content: center;
-}
-
-.speaker:hover{
-    box-shadow: 0 15px 10px -5px #bdb2b1,
-                15px 0 10px -5px #bdb2b1,
-                -15px 0 10px -5px #bdb2b1;
-}
-
-.speaker-1{
-    margin-right: 12%;
-}
-
-.speaker-3, .speaker-4, .speaker-5{
-    margin-left: 5.5%;
-    display: none;
-}
-
-.speaker-name{
-    font-size: 26px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
-}
-
-.speaker-desc{
-    font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-
-.speaker p{
-    font-weight: normal;
-}
-
-.contact{
-    position: relative;
-    width: 100%;
-    height: 600px;
-    background-color: black;
-    text-align: center;
-    color: white;
-}
-
-.quick{
-    position: relative;
-    width: 30%;
-    height: 500px;
-    float: left;
-}
-
-.stay{
-    font-size: 22px;
-    position: relative;
-    background-color: black;
-    float: left;
-    width: 30%;
-    height: 500px;
-}
-
-.address{
-    position: relative;
-    float: left;
-    width: 30%;
-    height: 500px;
-}
-
-.quick, .stay, .address{
-    margin-left: 2%;
-    margin-top: 3%;
-}
-
-.address-sec{
-    position: relative;
-    height: 250px;
-}
-
-.chair{
-    position: relative;
-    height: 250px;
-}
-
-.quick ul li{
-    list-style: none;
-    padding-top: 10px;
-}
-
-.quick li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: color 0.5s ease;
-}
-
-.quick li a:hover{
-    color: #ff4508;
-}
-
-.stay ul{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.stay ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.stay .connect-us{
-    font-size: 35px;
-}
-
-.contact i{
-    padding: 20px;
-    transition: color 0.5s ease-in;
-    color: white;
-}
-
-.contact i:hover{
-    color: #ff4508;
-}
-
-.address ul li{
-    list-style: none;
-    padding-top: 10px;
-    font-size: 20px;
-}
-
-.chair{
-    line-height: 40px;
-}
-
-.chair p{
-    font-size: 20px;
-}
-
-@media (min-width: 1201px){
-    .dropdown{
-        display: none;
-    }
-}
-
-@media (min-width: 1025px) and (max-width:1200px){
-    .dropdown{
-        display: none;
-    }
-
-    .events{
-        height: 1750px;
-        text-align: center;
-    }
-
-    .first-col{
-        height: 1500px;
-        text-align: center;
-    }
-
-    .price{
-        margin: 0;
-        float: left;
-        width: 40%;
-        height: 750px;
-    }
-
-    .event-1{
-        margin-left: 8%;
-    }
-
-    .event-2{
-        margin-left: 5%;
-    }
-
-    .event-3{
-        margin-left: 30%;
-        margin-top: 3.5%;
-    }
-
-    .speakers{
-        height: 1100px;
-    }
-
-    .speaker{
-        width: 38%;
-        height: 850px;
-    }
-
-    .speaker img{
-        height: 320px;
-        width: 240px;
-    }
-
-    .speaker-1{
-        margin-right: 10%;
-    }
-}
-
-@media (min-width: 769px) and (max-width:1024px){
-    nav{
-        display: none;
-    }
-
-    .logo-1{
-        display: none;
-    }
-
-    .logo-2{
-        padding-left: 5px;
-    }
-
-    .events{
-        height: 1750px;
-        text-align: center;
-    }
-
-    .first-col{
-        height: 1500px;
-        text-align: center;
-    }
-
-    .price{
-        margin: 0;
-        float: left;
-        width: 45%;
-        height: 750px;
-    }
-
-    .event-1{
-        margin-left: 3%;
-    }
-
-    .event-2{
-        margin-left: 3.5%;
-    }
-
-    .event-3{
-        margin-left: 30%;
-        margin-top: 3.5%;
-    }
-
-    .speakers{
-        height: 1200px;
-    }
-
-    .speakers-first{
-        height: 1050px;
-    }
-
-    .speaker{
-        height: 950px;
-        width: 45%;
-    }
-
-    .speaker-1{
-        margin-right: 3%;
-    }
-
-    .contact{
-        height: 680px;
-    }
-
-    .stay{
-        align-items: center;
-    }
-
-    .social{
-        width: 65%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .address{
-        height: 600px;
-    }
-
-    .address-sec{
-        height: 295px;
-    }
-
-    .chair{
-        height: 310px;
-    }
-}
-
-@media (min-width: 481px) and (max-width:768px){
-    nav{
-        display: none;
-    }
-
-    .logo-1{
-        display: none;
-    }
-
-    .logo-2{
-        padding-left: 5px;
-    }
-
-    .about{
-        height: 650px;
-    }
-
-    .about-text{
-        width: 100%;
-        height: 240px;
-        top: 21%;
-        padding-top: 50px;
-        font-size: 50px;
-        margin-top: 5%;
-    }
-
-    .info-head{
-        width: 80%;
-        margin-left: 9%;
-        font-size: 18px;
-        padding-top: 0;
-    }
-
-    .events{
-        height: 2400px;
-    }
-
-    .first-col{
-        height: 2250px;
-    }
-
-    .price{
-        width: 80%;
-        height: 725px;
-    }
-
-    .event-1, .event-2, .event-3, .event-4, .event-5{
-        margin-left: 10%;
-    }
-
-    .event-2, .event-3{
-        margin-top: 4%;
-    }
-
-    .tour{
-        height: 760px;
-    }
-
-    .vr{
-        width: 100%;
-        height: 280px;
-    }
-
-    .v1{
-        display: none;
-    }
-
-    .wrapper h1{
-        font-size: 45px;
-    }
-
-    .vr-desc{
-        width: 100%;
-        height: 420px;
-        top: 0;
-        overflow: auto;
-    }
-
-    .vr-desc p{
-        top: 0;
-        transform: translateY(0);
-    }
-
-    .speakers{
-        height: 1900px;
-    }
-
-    .speakers-first{
-        height: 1800px;
-        flex-direction: column;
-        margin-top: 5%;
-    }
-
-    .speaker{
-        width: 88%;
-        height: 840px;
-    }
-
-    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .speaker-2{
-        margin-top: 10%;
-    }
-
-    .contact{
-        height: 850px;
-    }
-
-    .quick, .stay, .address{
-        width: 90%;
-        margin-left: 4.5%;
-    }
-
-    .quick{
-        height: 170px;
-    }
-
-    .quick h1, .address h1{
-        font-size: 1.5em;
-    }
-
-    .quick li a, .address ul li{
-        font-size: 18px;
-    }
-
-    .stay{
-        height: 120px;
-    }
-
-    .stay .connect-us{
-        font-size: 1.2em;
-    }
-
-    .address-sec{
-        height: 220px;
-    }
-
-    .chair p{
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 480px){
-    nav{
-        display: none;
-    }
-
-    .logo-1{
-        display: none;
-    }
-
-    .logo-2{
-        padding-left: 5px;
-    }
-
-    .dropdown{
-        padding-left: 13px;
-    }
-
-    .about{
-        height: 750px;
-    }
-
-    .about-text{
-        width: 100%;
-        height: 240px;
-        top: 17%;
-        padding-top: 50px;
-        font-size: 50px;
-        margin-top: 5%;
-    }
-
-    .info-head{
-        width: 80%;
-        margin-left: 9%;
-        font-size: 18px;
-        padding-top: 0;
-        overflow: auto;
-    }
-
-    .events{
-        height: 2500px;
-    }
-
-    .first-col{
-        height: 2250px;
-    }
-
-    .price{
-        width: 90%;
-        height: 730px;
-    }
-
-    .event-1, .event-2, .event-3, .event-4, .event-5{
-        margin-left: 4%;
-    }
-
-    .event-2, .event-3{
-        margin-top: 6%;
-    }
-
-    .tour{
-        height: 900px;
-    }
-
-    .vr{
-        width: 100%;
-        height: 260px;
-    }
-
-    .v1{
-        display: none;
-    }
-
-    .wrapper h1{
-        font-size: 45px;
-    }
-
-    .vr-desc{
-        width: 100%;
-        height: 550px;
-        top: 0;
-        overflow: auto;
-    }
-
-    .vr-desc p{
-        top: 0;
-        transform: translateY(0);
-    }
-
-    .speakers{
-        height: 2050px;
-    }
-
-    .speakers-first{
-        height: 1900px;
-        top: 1.5%;
-        flex-direction: column;
-    }
-
-    .speaker{
-        width: 95%;
-        height: 960px;
-    }
-
-    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .speaker-2{
-        margin-top: 15%;
-    }
-
-    .contact{
-        height: 850px;
-    }
-
-    .quick, .stay, .address{
-        width: 90%;
-        margin-left: 4.5%;
-    }
-
-    .quick{
-        height: 170px;
-    }
-
-    .quick h1, .address h1{
-        font-size: 1.5em;
-    }
-
-    .quick li a, .address ul li{
-        font-size: 18px;
-    }
-
-    .stay{
-        height: 120px;
-    }
-
-    .stay .connect-us{
-        font-size: 1.2em;
-    }
-
-    .address-sec{
-        height: 220px;
-    }
-
-    .chair p{
-        font-size: 17px;
-    }
-}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" href="icon/IEEE-Icon.png" type="image/icon">
+        <script src="https://kit.fontawesome.com/740c431368.js" crossorigin="anonymous"></script>
+        <title>IEEE</title>
+    </head>
+
+    <body>
+
+        <header id="head">
+                <img class="logo-1" src="logos/ieee-logo.png" height="50px" alt="IEEE Logo">
+                <img class="logo-2" src="logos/ieee-ras.png" height="50px" alt="IEEE RAS Logo">
+                <img class="logo-3" src="logos/ieee-rex.jpg" height="50px" alt="IEEE REX Logo">
+            <nav>
+                <ul class="list-sec">
+                    <li><a href="https://ieeeritsb.com" target="_blank">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#tour">Virtual IV</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn click"><i onClick="myFunction" class="click fas fa-bars"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="https://ieeeritsb.com" target="_blank">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#events">Events</a>
+                    <a href="#tour">Virtual IV</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+              </div>
+
+        </header>
+
+        <div class="slides">
+
+                <img src="backgrounds/asimo.jpg" alt="">
+                
+                <div class="sign">
+                    <span class="fast-flicker">R</span><span class="flicker">.</span>E<span class="fast-flicker">.</span><span class="flicker">X</span>
+                </div>
+
+        </div>
+
+        <div class="about" id="about">
+
+            <div class="about-text">
+                What is REX?
+            </div>
+
+            <div class="info">
+                <p class="info-head">Robotics Experience Program (REX) is a unique learning platform hosted by IEEE RAS SBC RIT with the objective to strengthen student's 
+                    skills and knowledge in robotics and automation through a month-long virtual specialization program. The event opens up the opportunity to interact with 
+                    reputed personalities to build a strong base in ML, AR, IoT and 3D printing through specialization courses and interactive sessions. The event offers 30+ workshops, 
+                    10+ lecture series and a virtual IV for participants around the world to share, exchange, and establish knowledge in robotics and automation.</p>
+            </div>
+
+            <a href="#head">
+                <div id="myBtn" class="mybtn">
+                    <i class="fas fa-arrow-up fa-lg"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="events" id="events">
+
+            <h1>Events</h1>
+
+            <div class="first-col col">
+                <div class="price event-1">
+                    <h3>Deep Learning Master Class</h3>
+                    <ul class="align-items-evenly">
+                        <li><i class="fas fa-calendar-minus"></i><span>08-08-2020</span></li>
+                        <li><i class="far fa-clock"></i><span>3 PM - 5 PM</span></li>
+                    </ul>
+                    <p class="event-para">The course will take you from beginner and intermediate levels to advanced users.<br>
+                        Highlights:<br>
+                        Introduction to Machine Learning<br>
+                        Computer Vision<br>
+                        Model with TF.js<br>
+                        Transfer learning on models<br>
+                        <br>
+                        20 hour Course including Labs.<br>
+                        $25 worth lifetime Cloud credits included in the course.</p>
+                         
+                        <div class="price-info-ras">
+                            <span>RAS : &#x20b9;100</span><br>
+                            <span>IEEE : &#x20b9;200</span><br>
+                            <span>Non IEEE : &#x20b9;400</span>
+                        </div>
+                  
+                    <div class="bt-rs">
+                        <div class="bt">
+                            <button class="btn" id="btn1">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price event-2">
+                    <h3>Introduction to 3D Printing Technologies</h3>
+                    <ul  class="align-items-evenly">
+                        <li><i class="fas fa-calendar-minus"></i><span>COMING SOON</span></li>
+                        <!--<li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>-->
+                    </ul>
+                    <p class="event-para">Introduction  to  3D  printing  is a 32-hours workshop designed  to  learn  3D  printing from scratch without  delving into  the  complexities. 
+                        You can learn Autodesk Fusion 360 3D designing software,tools,hardwares used, advanced techniques for improving the quality of objects and saving materials 
+                        while printing,the software and hardware aspects of 3D printers to develop innovative products and prototypes of best quality at least possible cost.</p>
+                        <div class="price-info-ras">
+                            <span>RAS : &#x20b9;50</span>
+                            <span>IEEE : &#x20b9;100</span>
+                            <span>Non IEEE : &#x20b9;200</span>
+                        </div>
+    
+                    <div class="bt-rs">
+                        <div class="bt">
+                            <button class="btn" id="btn2">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price event-3">
+                    <h3>Making of AR lens</h3>
+                    <ul  class="align-items-evenly">
+                        <li><i class="fas fa-calendar-minus"></i><span>COMING SOON</span></li>
+                        <!--<li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>-->
+                    </ul>
+                    <p class="event-para">Augmented reality is one of the biggest trends now.AR let us see the real-life environment right in front of us. REX brings you the most awaited 5 day ,
+                        1 hour workshop on AR lens making. Participants will be taught about  AR, AR filter and how to implement an AR filter and post in social media pages. 
+                        Participants can work with any laptop and it doesn't require any extra features.</p>
+                        <div class="price-info-ras">
+                            <!--<span>RAS : &#x20b9;0</span>
+                            <span>IEEE : &#x20b9;0</span>-->
+                            <span>Non IEEE : &#x20b9;100</span>
+                        </div>
+                        
+                    <div class="bt-rs">
+                        <div class="bt">
+                            <button class="btn" id="btn3">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-col col">
+                <div class="price event-4">
+                    <h3>Event 4</h3>
+                    <ul>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
+                        <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum<br>
+                        <span>RAS : &#x20b9;250</span><br>
+                        <span>IEEE : &#x20b9;450</span><br>
+                        <span>Non IEEE : &#x20b9;800</span>
+                    </p>
+                    <div class="bt-rs">
+                        <div class="bt">
+                            <button class="btn" id="btn4">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price event-5">
+                    <h3>Event 5</h3>
+                    <ul>
+                        <li><i class="fas fa-calendar-minus"></i><span>22-02-2020</span></li>
+                        <li><i class="far fa-clock"></i><span>10 AM - 5 PM</span></li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor et ex et vehicula. Nullam volutpat aliquet lorem ut aliquet. Donec ac viverra enim. Morbi in odio nisl. Nunc sed euismod metus. Aenean placerat justo mauris, eu elementum<br>
+                        <span>RAS : &#x20b9;250</span><br>
+                        <span>IEEE : &#x20b9;450</span><br>
+                        <span>Non IEEE : &#x20b9;800</span>
+                    </p>
+                    <div class="bt-rs">
+                        <div class="bt">
+                            <button class="btn" id="btn5">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="tour" id="tour">
+
+            <div class="vr">
+                <img src="backgrounds/vr.jpg" alt="Virtual Tour" class="v1">
+                <div class="wrapper">
+                    <h1>Virtual Tour</h1>
+                </div>
+            </div>
+
+            <div class="vr-desc">
+                <p>Discover the world’s research on robotics and pursue the opportunity to acquire knowledge and mentoring in an authentic environment. 
+                    Join us for the virtual IV to discover, learn and interact with global participants and reputed personalities from the field of robotics and automation. 
+                    Seize the opportunity to have direct virtual experience and explore the science behind robotics.<br>
+                    <span>DATE: COMING SOON</span><br>
+                    <!--<span>TIME: 10 AM</span>--></p>
+
+                <button class="virtual-button" id="virtualbtn" onclick="comingsoon()">REGISTER NOW</button>
+            </div>
+
+        </div>
+
+        <div class="speakers">
+
+            <h1 class="speaker-head">Our speakers</h1>
+
+            <div class="speakers-first speakers-col">
+
+                <div class="speaker speaker-1">
+                    <img src="speakers-images/speaker-2.jpg" class="speaker-img" alt="">
+                    <h2 class="speaker-name">KRISHNANAND KAIPA</h2>
+                    <p class="speaker-desc">Krishnanand Kaipa is a robotics enthusiast, versatile mentor, and a distinguished engineer who is currently an associate professor 
+                        in the Department of Mechanical and Aerospace engineering at the Old Dominion University. He pursued a Ph.D. in Aerospace Engineering from 
+                        Indian Institute of Technology in the year 2007. He has 22+ years experience in the field of robotics and his broad research is focused on developing 
+                        robots that learn from, and work side-by-side with humans. His research areas of interest involve imitation learning, swarm intelligence, evolutionary 
+                        active learning, advanced manufacturing, motion planning etc. He is the recipient of the Best PhD Thesis and Best Masters Thesis from the Department of 
+                        Aerospace, IISc. He has also issued 27+ publications on various field of robotics.</p>
+                </div>
+
+                <div class="speaker speaker-2">
+                    <img src="speakers-images/abhi.jpg" class="speaker-img" alt="">
+                    <h2 class="speaker-name">Dr. Abhishek Diggewadi</h2>
+                    <p class="speaker-desc">There is no doubt that robotics in space will make a significant contribution to the future of the space environment. 
+                        To answer the question "What are the opportunities of Robotics in Space?", Dr.Abhishek Diggewadi, Junior Researcher and Project Manager - 
+                        itrust consulting s. à r. l,who has completed Master of Space Studies (MSS) Program 2019 from International Space University (ISU), 
+                        France,will be joining us on REX webinar series on 13 August</p>
+                </div>
+
+            </div>
+
+            <div class="speakers-second speakers-col">
+
+                <div class="speaker speaker-3">
+                    <img src="speakers-images/coming-soon.png" class="speaker-img" alt="">
+                    <h2 class="speaker-name">Name Here</h2>
+                    <p class="speaker-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies sit amet turpis et vulputate. Suspendisse hendrerit maximus commodo.</p>
+                </div>
+    
+                <div class="speaker speaker-4">
+                    <img src="speakers-images/coming-soon.png" class="speaker-img" alt="">
+                    <h2 class="speaker-name">Name Here</h2>
+                    <p class="speaker-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies sit amet turpis et vulputate. Suspendisse hendrerit maximus commodo..</p>
+                </div>
+
+                <div class="speaker speaker-5">
+                    <img src="speakers-images/coming-soon.png" class="speaker-img" alt="">
+                    <h2 class="speaker-name">Name Here</h2>
+                    <p class="speaker-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies sit amet turpis et vulputate. Suspendisse hendrerit maximus commodo..</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact" id="contact">
+
+            <div class="quick">
+                <h1 class="q-head">Quick Links</h1>
+                <ul class="q-link">
+                    <li><a href="https://www.ieee.org" target="_blank">IEEE.org</a></li>
+                    <li><a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore Digital Library</a></li>
+                    <li><a href="https://ieee-collabratec.ieee.org" target="_blank">IEEE Collabratec</a></li>
+                </ul>
+            </div>
+
+            <div class="stay">
+                <h1 class="connect-us">Connect With Us</h1>
+                <div class="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/ieeesbrit" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="https://www.facebook.com/IEEESBRIT" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li><a href="https://twitter.com/ieeesbrit" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ieee-sb-rit-55a6631aa" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="address">
+                <div class="address-sec">
+                    <h1 class="address-head">Address</h1>
+                    <ul class="adress-li">
+                        <li>RIT College Of Engineering</li>
+                        <li>Pampady, Kottayam, Kerala</li>
+                        <li>Pin: 680711</li>
+                        <li>Email: ieeesb.ritk@gmail.com</li>
+                    </ul>
+                </div>
+
+                <div class="chair">
+                    <h1 class="chairperson">Chairperson</h1>
+                    <p>Martin Joe C: 8921440372</p>
+                    <h1 class="counselor">Counselor</h1>
+                    <p>Anu George: 9447266358</p>
+                    <h1 class="webmaster">Webmaster</h1>
+                    <p>Vishnu Ko: 8157065684</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <script>
+
+            /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
+            function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            /* Close the dropdown menu if the user clicks outside of it*/
+            window.onclick = function(event){
+                if (!event.target.matches('.click')){
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++){
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+
+            /* Fixed button */
+            mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function(){scrollFunction()};
+
+            function scrollFunction() 
+            {
+                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+                {
+                    mybutton.style.display = "block";
+                }
+                else
+                {
+                    mybutton.style.display = "none";
+                }
+            }
+
+
+            /*Register Now Button*/
+            document.getElementById("btn1").onclick = function(){
+                location.href = "https://docs.google.com/forms/d/16LUHcXwqIfwiuh5t75Q0Mgu0-E58wfyfEhzlroUQQCg/viewform?edit_requested=true";
+            }
+
+            document.getElementById("btn2").onclick = function(){
+                alert("COMING SOON");
+            }
+
+            document.getElementById("btn3").onclick = function(){
+                alert("COMING SOON");
+            }
+
+            document.getElementById("btn4").onclick = function(){
+                location.href = "#";
+            }
+
+            document.getElementById("btn5").onclick = function(){
+                location.href = "#";
+            }
+
+
+            /*Virtual Tour Button*/
+            /*document.getElementById("virtualbtn").onclick = function(){
+                location.href = "#";
+            }*/
+            function comingsoon(){
+                alert("COMING SOON");
+            }
+
+
+            /*smooth scrolling*/
+            let anchorSelector = 'a[href^="#"]'; 
+      
+             
+            let anchorList = document.querySelectorAll(anchorSelector); 
+        
+            
+            anchorList.forEach(link =>{ 
+                link.onclick = function(e){ 
+    
+                    e.preventDefault(); 
+
+                    let destination = document.querySelector(this.hash); 
+
+                    destination.scrollIntoView({behavior: 'smooth'}); 
+                } 
+            });
+
+            </script>
+
+    </body>
+</html>

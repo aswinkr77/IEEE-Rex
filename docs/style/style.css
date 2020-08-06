@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     position: relative;
     align-items: center;
@@ -704,13 +708,14 @@ header ul li a:hover{
 
 .speakers-col .speakers-first, .speakers-second{
     width: 100%;
-    margin: auto;
 }
 
 .speakers-first{
     position: relative;
     height: 1000px;
-    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .speakers-second{
@@ -741,23 +746,14 @@ header ul li a:hover{
                 -15px 0 10px -5px #bdb2b1;
 }
 
-.speaker-1, .speaker-2{
-    margin-top: 1%;
-}
-
 .speaker-1{
-    margin-left: 18%;
-    margin-right: 5%
+    margin-right: 12%;
 }
 
 .speaker-3, .speaker-4, .speaker-5{
     margin-left: 5.5%;
     display: none;
 }
-
-/*.speaker-2{
-    display: none;
-}*/
 
 .speaker-name{
     font-size: 26px;
@@ -786,8 +782,6 @@ header ul li a:hover{
     text-align: center;
     color: white;
 }
-
-
 
 .quick{
     position: relative;
@@ -938,11 +932,7 @@ header ul li a:hover{
     }
 
     .speaker-1{
-        margin-left: 8%;
-    }
-
-    .speaker-1, .speaker-2{
-        margin-top: 1%;
+        margin-right: 10%;
     }
 }
 
@@ -1003,7 +993,7 @@ header ul li a:hover{
     }
 
     .speaker-1{
-        margin-left: 2.5%;
+        margin-right: 3%;
     }
 
     .contact{
@@ -1122,6 +1112,8 @@ header ul li a:hover{
 
     .speakers-first{
         height: 1800px;
+        flex-direction: column;
+        margin-top: 5%;
     }
 
     .speaker{
@@ -1129,8 +1121,9 @@ header ul li a:hover{
         height: 840px;
     }
 
-    .speaker-1, .speaker-2{
-        margin-left: 5%;
+    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .speaker-2{
@@ -1264,12 +1257,13 @@ header ul li a:hover{
     }
 
     .speakers{
-        height: 2100px;
+        height: 2050px;
     }
 
     .speakers-first{
         height: 1900px;
         top: 1.5%;
+        flex-direction: column;
     }
 
     .speaker{
@@ -1277,12 +1271,13 @@ header ul li a:hover{
         height: 960px;
     }
 
-    .speaker-1, .speaker-2{
-        margin-left: 2.88%;
+    .speaker-1, .speaker-2, .speaker-3, .speaker-4, .speaker-5{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .speaker-2{
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .contact{

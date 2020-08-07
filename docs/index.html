@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="icon" href="icon/IEEE-Icon.png" type="image/icon">
         <script src="https://kit.fontawesome.com/740c431368.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>IEEE</title>
     </head>
 
@@ -36,7 +37,7 @@
                     <a href="#tour">Virtual IV</a>
                     <a href="#contact">Contact Us</a>
                 </div>
-              </div>
+            </div>
 
         </header>
 
@@ -329,6 +330,18 @@
 
 
         <script>
+
+            $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+            $(window).on('load', function(){
+                setTimeout(removeLoader, 3000); //wait for page load + three seconds.
+            });
+
+            function removeLoader(){
+                $( "#loadingDiv" ).fadeOut(500, function() {
+                    // fadeOut complete. Remove the loading div
+                    $( "#loadingDiv" ).remove(); //makes page more lightweight 
+                });  
+            }
 
             /* When the user clicks on the button,toggle between hiding and showing the dropdown content */
             function myFunction(){

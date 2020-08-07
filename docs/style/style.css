@@ -450,7 +450,7 @@ header ul li a:hover{
     position: relative;
     width: 100%;
     /*height: 1700px;*/
-    height: 830px;
+    height: 870px;
     background-color: white;
     font-size: 30px;
 }
@@ -472,6 +472,9 @@ header ul li a:hover{
 
 .first-col{
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     padding-top: 15px;
     height: 750px;
 }
@@ -479,13 +482,15 @@ header ul li a:hover{
 .second-col{
     position: relative;
     height: 750px;
-    display: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 .price{
     position: relative;
     width: 30%;
-    float: left;
     height: 675px;
     background-color: white;
     box-shadow: 2px 2px 2px 2px #cbd6cb;
@@ -497,15 +502,6 @@ header ul li a:hover{
 .price:hover{
     box-shadow: 2px 2px 2px 2px #cbd6cb,
                 -2px -2px 2px 2px #cbd6cb;
-}
-
-.event-1, .event-2, .event-3{
-    margin-left: 2.4%;
-    margin-right: 0;
-}
-
-.event-4, .event-5{
-    display: none;
 }
 
 .price h3{
@@ -583,15 +579,6 @@ header ul li a:hover{
 
 .btn:hover{
     background-image:linear-gradient(to right, #640c6c, #640c6c);;
-}
-
-.event-4, .event-5{
-    margin-top: 1%;
-}
-
-.event-4{
-    margin-left: 18%;
-    margin-right: 5%;
 }
 
 .tour{
@@ -694,7 +681,7 @@ header ul li a:hover{
 .speakers{
     position: relative;
     width: 100%;
-    /*height: 1750px;*/
+    /*height: 2250px*/
     height: 1100px;
     background-color: white;
 }
@@ -722,8 +709,11 @@ header ul li a:hover{
 
 .speakers-second{
     position: relative;
-    height: 800px;
+    height: 1000px;
     display: none;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
 }
 
 .speaker-img{
@@ -753,7 +743,6 @@ header ul li a:hover{
 }
 
 .speaker-3, .speaker-4, .speaker-5{
-    margin-left: 5.5%;
     display: none;
 }
 
@@ -882,6 +871,14 @@ header ul li a:hover{
     .dropdown{
         display: none;
     }
+
+    .second-col{
+        display: none;
+    }
+
+    .event-4, .event-5{
+        display: none;
+    }
 }
 
 @media (min-width: 1025px) and (max-width:1200px){
@@ -890,13 +887,17 @@ header ul li a:hover{
     }
 
     .events{
-        height: 1750px;
+        height: 1800px;
         text-align: center;
     }
 
     .first-col{
-        height: 1500px;
+        height: 880px;
         text-align: center;
+    }
+
+    .event-2, .event-3{
+        display: none;
     }
 
     .price{
@@ -904,19 +905,6 @@ header ul li a:hover{
         float: left;
         width: 40%;
         height: 750px;
-    }
-
-    .event-1{
-        margin-left: 8%;
-    }
-
-    .event-2{
-        margin-left: 5%;
-    }
-
-    .event-3{
-        margin-left: 30%;
-        margin-top: 3.5%;
     }
 
     .speakers{
@@ -952,13 +940,21 @@ header ul li a:hover{
     }
 
     .events{
-        height: 1750px;
+        height: 1850px;
         text-align: center;
     }
 
     .first-col{
-        height: 1500px;
+        height: 850px;
         text-align: center;
+    }
+
+    .second-col{
+        height: 850px;
+    }
+
+    .event-2, .event-3{
+        display: none;
     }
 
     .price{
@@ -1064,19 +1060,20 @@ header ul li a:hover{
 
     .first-col{
         height: 2250px;
+        flex-direction: column;
+    }
+
+    .event-2, .event-3{
+        margin-top: 5%;
+    }
+
+    .second-col{
+        display: none;
     }
 
     .price{
         width: 80%;
         height: 725px;
-    }
-
-    .event-1, .event-2, .event-3, .event-4, .event-5{
-        margin-left: 10%;
-    }
-
-    .event-2, .event-3{
-        margin-top: 4%;
     }
 
     .tour{
@@ -1209,11 +1206,16 @@ header ul li a:hover{
     }
 
     .events{
-        height: 2500px;
+        height: 2400px;
     }
 
     .first-col{
         height: 2250px;
+        flex-direction: column;
+    }
+
+    .second-col{
+        display: none;
     }
 
     .price{
@@ -1221,12 +1223,8 @@ header ul li a:hover{
         height: 730px;
     }
 
-    .event-1, .event-2, .event-3, .event-4, .event-5{
-        margin-left: 4%;
-    }
-
     .event-2, .event-3{
-        margin-top: 6%;
+        margin-top: 10%;
     }
 
     .tour{

@@ -102,23 +102,25 @@ header{
 header .logos{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 600px;
     margin: 17px 0;
 }
 
 header .section-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    width: 70%;
+    width: 80%;
 }
 
 header .section-list a{
     text-decoration: none;
     color: black;
+    margin-right: 40px;
+    margin-left: 10px;
 }
 
 header .section-list a:hover{

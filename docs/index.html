@@ -15,22 +15,24 @@
     <body>
 
         <header id="head">
+
+            <nav class="logos">
                 <img class="logo-1" src="logos/ieee-logo.png" height="50px" alt="IEEE Logo">
                 <img class="logo-2" src="logos/ieee-ras.png" height="50px" alt="IEEE RAS Logo">
                 <img class="logo-3" src="logos/ieee-rex.jpg" height="50px" alt="IEEE REX Logo">
-            <nav>
-                <ul class="list-sec">
-                    <li><a href="https://ieeeritsb.com" target="_blank">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#tour">Virtual IV</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
             </nav>
 
-            <div class="dropdown" id="drop-down">
+            <nav class="section-list">
+                    <a href="https://ieeeritsb.com" target="_blank">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#events">Events</a>
+                    <a href="#tour">Virtual IV</a>
+                    <a href="#contact">Contact Us</a>
+            </nav>
+
+            <nav class="dropdown" id="drop-down">
                 <button onclick="dropFunction()" class="dropbtn click"><i onClick="myFunction" class="click fas fa-bars"></i></button>
-            </div>
+            </nav>
 
         </header>
 
@@ -428,26 +430,7 @@
                 alert("COMING SOON");
             }
 
-
-            /*smooth scrolling*/
-            let anchorSelector = 'a[href^="#"]'; 
-      
-             
-            let anchorList = document.querySelectorAll(anchorSelector); 
-        
-            
-            anchorList.forEach(link =>{ 
-                link.onclick = function(e){ 
-    
-                    e.preventDefault(); 
-
-                    let destination = document.querySelector(this.hash); 
-
-                    destination.scrollIntoView({behavior: 'smooth'}); 
-                } 
-            });
-
-            </script>
+        </script>
 
     </body>
 </html>

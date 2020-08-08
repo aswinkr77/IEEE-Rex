@@ -54,6 +54,10 @@ header, .dropdown, .drop-menu{
     -webkit-tap-highlight-color: transparent;
 }
 
+a:focus, button:focus{
+    outline: none !important;
+}
+
 .loader{
     position: absolute;
     top: 50%;

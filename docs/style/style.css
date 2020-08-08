@@ -1102,7 +1102,6 @@ header .dropdown .dropbtn:hover{
     header .dropdown{
         display: block;
         margin-left: 10px;
-        margin-bottom: 15px;
     }
 
     .drop-menu{

@@ -96,6 +96,7 @@ nav li, nav a{
     font-size: 25px;
     font-family: 'Nunito', sans-serif;
 }
+
 .list-sec{
     font-weight:bold;
 }
@@ -131,7 +132,7 @@ nav li{
 }
 
 header ul li a, .v-line, .logo{
-    transition: all 0.2s ease-in 0s;
+    transition: all 0.5s ease-in 0s;
 }
 
 header ul li a{
@@ -139,7 +140,9 @@ header ul li a{
 }
 
 header ul li a:hover{
-    color: #ff4508;
+    background: linear-gradient(to right, #640c6c 0%, #cf6d99 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 /* Dropdown Button */
@@ -177,18 +180,12 @@ header ul li a:hover{
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+    flex-direction: column;
 }
 
-.drop-menu ul li{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: center;
+.drop-menu a{
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.drop-menu li a{
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -196,11 +193,11 @@ header ul li a:hover{
     height: 100%;
 }
 
-.drop-menu ul li:hover a{
+.drop-menu a:hover{
     color: white;
 }
 
-.drop-menu ul li:hover{
+.drop-menu a:hover{
     background-color: #640c6c;
 }
 
@@ -913,12 +910,14 @@ header ul li a:hover{
 
 .contact i{
     padding: 20px;
-    transition: color 0.5s ease-in;
+    transition: background-clip 0.5s ease-in;
     color: white;
 }
 
 .contact i:hover{
-    color: #ff4508;
+    background: linear-gradient(to right, #640c6c 0%, #cf6d99 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .address ul li{
@@ -1008,7 +1007,7 @@ header ul li a:hover{
     }
 
     .drop-menu{
-        display: block;
+        display: flex;
     }
 
     .events{
@@ -1106,8 +1105,12 @@ header ul li a:hover{
         padding-left: 5px;
     }
 
+    .dropdown{
+        right: 1%;
+    }
+
     .drop-menu{
-        display: block;
+        display: flex;
         width: 100%;
         font-size: 22px;
     }
@@ -1259,13 +1262,13 @@ header ul li a:hover{
     }
 
     .drop-menu{
-        display: block;
+        display: flex;
         width: 100%;
         font-size: 22px;
     }
 
     .dropdown{
-        padding-left: 13px;
+        right: 0.5%;
     }
 
     .about{

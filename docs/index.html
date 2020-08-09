@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
         <script src="https://kit.fontawesome.com/740c431368.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>IEEE</title>
+
     </head>
 
     <body>
@@ -37,17 +39,19 @@
         </header>
 
         <div class="drop-menu" id="drop-content">
+
             <a href="https://ieeeritsb.com" target="_blank">Home</a>
             <a href="#about">About</a>
             <a href="#events">Events</a>
             <a href="#tour">Virtual IV</a>
             <a href="#contact">Contact</a>
+
         </div>
 
         <div class="slides">
 
                 <img src="backgrounds/asimo.jpg" alt="">
-                
+                             
                 <div class="sign">
                     <span class="fast-flicker">R</span><span class="flicker">.</span>E<span class="fast-flicker">.</span><span class="flicker">X</span>
                 </div>
@@ -196,13 +200,6 @@
 
         <div class="tour" id="tour">
 
-            <div class="vr">
-                <img src="backgrounds/vr.jpg" alt="Virtual Tour" class="v1">
-                <div class="wrapper">
-                    <h1>Virtual Tour</h1>
-                </div>
-            </div>
-
             <div class="vr-desc">
                 <p>Discover the world’s research on robotics and pursue the opportunity to acquire knowledge and mentoring in an authentic environment. 
                     Join us for the virtual IV to discover, learn and interact with global participants and reputed personalities from the field of robotics and automation. 
@@ -212,6 +209,13 @@
                 </p>
 
                 <button class="virtual-button" id="virtualbtn" onclick="comingsoon()">REGISTER NOW</button>
+            </div>
+
+            <div class="vr">
+                <!--<img src="backgrounds/vr.jpg" alt="Virtual Tour" class="v1">-->
+                <div class="wrapper">
+                    <h1>Virtual Tour</h1>
+                </div>
             </div>
 
         </div>
@@ -284,54 +288,51 @@
         </div>
 
 
-        <div class="contact" id="contact">
+        <footer class="contact" id="contact">
 
-            <div class="quick">
-                <h1 class="q-head">Quick Links</h1>
-                <ul class="q-link">
-                    <li><a href="https://www.ieee.org" target="_blank">IEEE.org</a></li>
-                    <li><a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore Digital Library</a></li>
-                    <li><a href="https://ieee-collabratec.ieee.org" target="_blank">IEEE Collabratec</a></li>
-                </ul>
+            <div class="quick-links">
+                <h1>Quick Links</h1>
+                <a href="https://www.ieee.org" target="_blank">IEEE.org</a>
+                <a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore Digital Library</a>
+                <a href="https://ieee-collabratec.ieee.org" target="_blank">IEEE Collabratec</a>
             </div>
 
-            <div class="stay">
-                <h1 class="connect-us">Connect With Us</h1>
-                <div class="social">
-                <ul>
-                    <li><a href="https://www.instagram.com/ieeesbrit" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
-                    <li><a href="https://www.facebook.com/IEEESBRIT" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a></li>
-                    <li><a href="https://twitter.com/ieeesbrit" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ieee-sb-rit-55a6631aa" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-                </ul>
+            <div class="social">
+                <h1>Connect With Us</h1>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ieeesbrit" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/IEEESBRIT" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://twitter.com/ieeesbrit" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/ieee-sb-rit-55a6631aa" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
                 </div>
             </div>
 
             <div class="address">
+
                 <div class="address-sec">
-                    <h1 class="address-head">Address</h1>
-                    <ul class="adress-li">
-                        <li>RIT College Of Engineering</li>
-                        <li>Pampady, Kottayam, Kerala</li>
-                        <li>Pin: 680711</li>
-                        <li>Email: ieeesb.ritk@gmail.com</li>
-                    </ul>
+                    <h1>Address</h1>
+                    <p>RIT College Of Engineering</p>
+                    <p>Pampady, Kottayam, Kerala</p>
+                    <p>Pin: 680711</p>
+                    <p>Email: ieeesb.ritk@gmail.com</p>
                 </div>
 
-                <div class="chair">
-                    <h1 class="chairperson">Chairperson</h1>
+                <div class="execom">
+                    <h1>Chairperson</h1>
                     <p>Martin Joe C: 8921440372</p>
-                    <h1 class="counselor">Counselor</h1>
+                    <h1>Counselor</h1>
                     <p>Anu George: 9447266358</p>
-                    <h1 class="webmaster">Webmaster</h1>
+                    <h1>Webmaster</h1>
                     <p>Vishnu Ko: 8157065684</p>
                 </div>
             </div>
 
-        </div>
+        </footer>
 
 
         <script>
+
+            /********** Pre-loader Animation jQuery **********/
 
             $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
             $(window).on('load', function()
@@ -347,6 +348,11 @@
                     $( "#loadingDiv" ).remove(); //makes page more lightweight 	
                 }); 	
             }
+
+            /************************************************/
+
+
+            /********** Dropdown Menu - Dropdown button **********/
 
             var dropBtn = 0;
 
@@ -381,8 +387,11 @@
                 } 
             })
 
+            /******************************************************/
 
-            /* Fixed button */
+
+            /********** Fixed button -> To the Top **********/
+
             mybutton = document.getElementById("myBtn");
 
             window.onscroll = function(){scrollFunction()};
@@ -399,8 +408,10 @@
                 }
             }
 
+            /***********************************************/
 
-            /*Register Now Button*/
+            /********** Events Register Now Buttons **********/
+
             document.getElementById("btn1").onclick = function(){
                 location.href = "https://docs.google.com/forms/d/16LUHcXwqIfwiuh5t75Q0Mgu0-E58wfyfEhzlroUQQCg/viewform?edit_requested=true";
             }
@@ -421,14 +432,20 @@
                 alert("COMING SOON");
             }
 
+            /*************************************************/
 
-            /*Virtual Tour Button*/
+
+            /********** Virtual Tour Register Now Button **********/
+
             /*document.getElementById("virtualbtn").onclick = function(){
                 location.href = "#";
             }*/
+
             function comingsoon(){
                 alert("COMING SOON");
             }
+
+            /*************************************************/
 
         </script>
 

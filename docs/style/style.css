@@ -613,48 +613,21 @@ header .dropdown .dropbtn:hover{
 }
 
 .tour{
-    position: relative;
-    width: 100%;
-    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: white;
-}
-
-.vr{
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 600px;
-}
-
-.vr img{
-    width: 90%;
-    height: 90%;
-}
-
-.wrapper{
-    left: 50%;
-    top: 50%;
-    z-index: 100;
-    transform: translate(-50%, -50%);
-    position: absolute;
-	text-align: center;
+    min-height: 600px;
+    padding-bottom: 20px;
 }
 
 .vr-desc{
-    position: relative;
-    width: 50%;
-    height: 600px;
-    float: left;
+    width: 35%;
     font-family: 'Nunito', sans-serif;
 }
 
 .vr-desc p{
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 19px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -665,15 +638,11 @@ header .dropdown .dropbtn:hover{
 .virtual-button{
     background-image: linear-gradient(to right, #ad2863, #cf6d99);
     color: white;
-    position: absolute;
-    bottom: 9%;
-    left: 50%;
-    transform: translateX(-50%);
     outline: none;
     cursor: pointer;
     font-size: 20px;
+    margin-top: 25px;
     padding: 20px;
-    outline: 0;
     border: 0;
     border-radius: 8px;
     transition: background-image 0.5s ease;
@@ -681,6 +650,10 @@ header .dropdown .dropbtn:hover{
 
 .virtual-button:hover{
     background-image:linear-gradient(to right, #640c6c, #640c6c);
+}
+
+.vr{
+    width: 30%;
 }
 
 .wrapper h1{
@@ -771,112 +744,76 @@ header .dropdown .dropbtn:hover{
     font-weight: normal;
 }
 
-.contact{
-    position: relative;
+footer{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 600px;
-    background-color: black;
-    text-align: center;
+    background-color: #0f0f0f;
     color: white;
 }
 
-.quick{
-    position: relative;
+footer .quick-links,footer .social,footer .address{
     width: 30%;
-    height: 500px;
-    float: left;
+    display: flex;
+    flex-direction: column;
 }
 
-.stay{
-    font-size: 22px;
-    position: relative;
-    background-color: black;
-    float: left;
-    width: 30%;
-    height: 500px;
+footer .quick-links, footer .social{
+    margin-top: 20px;
 }
 
-.address{
-    position: relative;
-    float: left;
-    width: 30%;
-    height: 500px;
-}
-
-.quick, .stay, .address{
-    margin-left: 2%;
-    margin-top: 3%;
-}
-
-.address-sec{
-    position: relative;
-    height: 250px;
-}
-
-.chair{
-    position: relative;
-    height: 250px;
-}
-
-.quick ul li{
-    list-style: none;
-    padding-top: 10px;
-}
-
-.quick li a{
-    text-decoration: none;
-    color: white;
+footer .quick-links a{
     font-size: 20px;
-    transition: color 0.5s ease;
-}
-
-.quick li a:hover{
-    color: #ff4508;
-}
-
-.stay ul{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.stay ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.stay .connect-us{
-    font-size: 35px;
-}
-
-.contact i{
-    padding: 20px;
-    transition: background-clip 0.5s ease-in;
+    padding-top: 10px;
     color: white;
 }
 
-.contact i:hover{
-    background: linear-gradient(to right, #640c6c 0%, #cf6d99 60%);
+footer .social h1{
+    margin-bottom: 15px;
+}
+
+footer .social a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-image: linear-gradient(to right, #640c6c 0%, #cf6d99 45%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.address ul li{
-    list-style: none;
+footer .social .social-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .address{
+    margin: 20px 0;
+}
+
+footer .address .address-sec  p{
+    font-size: 20px;
     padding-top: 10px;
-    font-size: 20px;
 }
 
-.chair{
-    line-height: 40px;
+footer .address .address-sec, footer .address .execom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.chair p{
+footer .address .address-sec{
+    margin-bottom: 20px;
+}
+
+footer .address .execom p{
     font-size: 20px;
+    padding: 5px 0;
 }
 
 @media (min-width: 1025px) and (max-width:1200px){
-
     .price{
         width: 40%;
     }
@@ -921,34 +858,21 @@ header .dropdown .dropbtn:hover{
         width: 45%;
     }
 
+    .tour{
+        justify-content: center;
+    }
+
+    .vr-desc{
+        width: 40%;
+    }
+
+    .vr{
+        width: 50%;
+        padding-left: 10px;
+    }
+
     .speaker{
-        width: 45%;
-    }
-
-    .contact{
-        height: 680px;
-    }
-
-    .stay{
-        align-items: center;
-    }
-
-    .social{
-        width: 65%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .address{
-        height: 600px;
-    }
-
-    .address-sec{
-        height: 295px;
-    }
-
-    .chair{
-        height: 310px;
+        width: 40%;
     }
 }
 
@@ -1005,73 +929,58 @@ header .dropdown .dropbtn:hover{
     }
 
     .tour{
-        height: 760px;
-    }
-
-    .vr{
-        width: 100%;
-        height: 280px;
-    }
-
-    .v1{
-        display: none;
+        flex-direction: column-reverse;
     }
 
     .wrapper h1{
         font-size: 45px;
     }
 
-    .vr-desc{
-        width: 100%;
-        height: 420px;
-        top: 0;
-        overflow: auto;
+    .vr{
+        width: fit-content;
     }
 
-    .vr-desc p{
-        top: 0;
-        transform: translateY(0);
+    .vr-desc{
+        width: 80%;
     }
 
     .speaker{
         width: 80%;
     }
 
-    .contact{
-        height: 850px;
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .quick, .stay, .address{
-        width: 90%;
-        margin-left: 4.5%;
+    footer .quick-links, footer .social, footer .address{
+        width: 60%;
     }
 
-    .quick{
-        height: 170px;
-    }
-
-    .quick h1, .address h1{
+    footer h1{
         font-size: 1.5em;
     }
 
-    .quick li a, .address ul li{
+    footer .quick-links a, footer .address .address-sec p, footer .address .execom p{
         font-size: 18px;
     }
 
-    .stay{
-        height: 120px;
+    footer .social, footer .address{
+        padding-top: 25px;
     }
 
-    .stay .connect-us{
-        font-size: 1.2em;
+    footer .social .social-icons{
+        justify-content: space-evenly;
     }
 
-    .address-sec{
-        height: 220px;
+    footer .social .social-icons a{
+        font-size: 22px;
     }
 
-    .chair p{
-        font-size: 17px;
+    footer .address .execom{
+        padding-top: 10px;
     }
 }
 
@@ -1142,72 +1051,59 @@ header .dropdown .dropbtn:hover{
     }
 
     .tour{
-        height: 900px;
-    }
-
-    .vr{
-        width: 100%;
-        height: 260px;
-    }
-
-    .v1{
-        display: none;
+        flex-direction: column-reverse;
+        min-height: 630px;
     }
 
     .wrapper h1{
         font-size: 45px;
     }
 
-    .vr-desc{
-        width: 100%;
-        height: 550px;
-        top: 0;
-        overflow: auto;
+    .vr{
+        width: 70%;
+        padding-bottom: 15px;
     }
 
-    .vr-desc p{
-        top: 0;
-        transform: translateY(0);
+    .vr-desc{
+        width: 80%;
     }
 
     .speaker{
         width: 88%;
     }
 
-    .contact{
-        height: 850px;
+    footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .quick, .stay, .address{
+    footer .quick-links, footer .social, footer .address{
         width: 90%;
-        margin-left: 4.5%;
     }
 
-    .quick{
-        height: 170px;
-    }
-
-    .quick h1, .address h1{
+    footer h1{
         font-size: 1.5em;
     }
 
-    .quick li a, .address ul li{
+    footer .quick-links a, footer .address .address-sec p, footer .address .execom p{
         font-size: 18px;
     }
 
-    .stay{
-        height: 120px;
+    footer .social, footer .address{
+        padding-top: 25px;
     }
 
-    .stay .connect-us{
-        font-size: 1.2em;
+    footer .social .social-icons{
+        justify-content: space-evenly;
     }
 
-    .address-sec{
-        height: 220px;
+    footer .social .social-icons a{
+        font-size: 22px;
     }
 
-    .chair p{
-        font-size: 17px;
+    footer .address .execom{
+        padding-top: 10px;
     }
 }

@@ -32,9 +32,12 @@
                     <a href="#contact">Contact Us</a>
             </nav>
 
-            <nav class="dropdown" id="drop-down">
-                <button onclick="dropFunction()" class="dropbtn click"><i onClick="myFunction" class="click fas fa-bars"></i></button>
-            </nav>
+            <div id="toggleButton" class="toggle" onclick="dropFunction()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
         </header>
 
@@ -44,7 +47,7 @@
             <a href="#about">About</a>
             <a href="#events">Events</a>
             <a href="#tour">Virtual IV</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact Us</a>
 
         </div>
 
@@ -362,25 +365,28 @@
 
                 if(dropBtn%2 == 0)
                 {
+                    document.getElementById("toggleButton").classList.remove("cross");
                     document.getElementById("drop-content").classList.remove("show-menu");
                     document.getElementById("drop-content").classList.add("retract-menu");
                 }
                 else
                 {
+                    document.getElementById("toggleButton").classList.add("cross");
                     document.getElementById("drop-content").classList.add("show-menu");
                     document.getElementById("drop-content").classList.remove("retract-menu");
                 }
 
                 if(dropBtn == 2)
                 {
-                    dropBtn = dropBtn -2;
+                    dropBtn = dropBtn - 2;
                 }
             }
 
             window.addEventListener('click', function(e)
             {
-	            if(!document.getElementById('drop-down').contains(e.target))
+	            if(!document.getElementById('toggleButton').contains(e.target))
                 {
+                    document.getElementById("toggleButton").classList.remove("cross");
                     document.getElementById("drop-content").classList.remove("show-menu");
                     document.getElementById("drop-content").classList.add("retract-menu");
                     dropBtn = 0;

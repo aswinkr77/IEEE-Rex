@@ -829,6 +829,7 @@ footer .social a{
     font-size: 25px;
     color: white;
     text-decoration: none;
+    margin: 0 15px;
 }
 
 footer a:hover{
@@ -839,7 +840,7 @@ footer a:hover{
 
 footer .social .social-icons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 footer .address{
@@ -1061,10 +1062,6 @@ footer .address .execom p{
         padding-top: 25px;
     }
 
-    footer .social .social-icons{
-        justify-content: space-evenly;
-    }
-
     footer .social .social-icons a{
         font-size: 22px;
     }
@@ -1218,10 +1215,6 @@ footer .address .execom p{
 
     footer .social, footer .address{
         padding-top: 25px;
-    }
-
-    footer .social .social-icons{
-        justify-content: space-evenly;
     }
 
     footer .social .social-icons a{

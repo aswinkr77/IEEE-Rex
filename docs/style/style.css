@@ -759,6 +759,22 @@ header .section-list a:hover{
     justify-content: center;
 }
 
+.speaker ul{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.speaker ul li{
+    font-size: 18px;
+}
+
+.speaker i{
+    background-image: linear-gradient(to right, #640c6c 0%, #cf6d99 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 10px;
+}
+
 .speaker:hover{
     box-shadow: 0 15px 10px -5px #bdb2b1,
                 15px 0 10px -5px #bdb2b1,
@@ -1039,6 +1055,10 @@ footer .address .execom p{
         font-size: 17px;
     }
 
+    .speaker ul li{
+        font-size: 17px;
+    }
+
     footer{
         flex-wrap: wrap;
         flex-direction: column;
@@ -1191,6 +1211,10 @@ footer .address .execom p{
     }
 
     .speaker-desc{
+        font-size: 17px;
+    }
+
+    .speaker ul li{
         font-size: 17px;
     }
 

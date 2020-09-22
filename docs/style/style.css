@@ -695,6 +695,22 @@ header .section-list a:hover{
     width: 30%;
 }
 
+.vr-desc ul{
+    list-style-type: none;
+}
+
+.vr-desc i{
+    background-image: linear-gradient(to right, #640c6c 0%, #cf6d99 45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 10px;
+}
+
+.vr-desc ul li{
+    padding: 8px 10px 8px 0;
+    font-size: 18px;
+}
+
 .wrapper h1{
     color: #fff;
     font-size: 92px;

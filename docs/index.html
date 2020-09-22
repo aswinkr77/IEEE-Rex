@@ -208,11 +208,13 @@
                 <p>Discover the world’s research on robotics and pursue the opportunity to acquire knowledge and mentoring in an authentic environment. 
                     Join us for the virtual IV to discover, learn and interact with global participants and reputed personalities from the field of robotics and automation. 
                     Seize the opportunity to have direct virtual experience and explore the science behind robotics.<br>
-                    <span>DATE: COMING SOON</span><br>
-                    <!--<span>TIME: 10 AM</span>-->
+                    <ul class="align-items-evenly">
+                        <li><i class="fas fa-calendar-minus"></i><span>26/09/2020</span></li>
+                        <li><i class="far fa-clock"></i><span>4 PM - 5 PM</span></li>
+                    </ul>
                 </p>
 
-                <button class="virtual-button" id="virtualbtn" onclick="comingsoon()">REGISTER NOW</button>
+                <button class="virtual-button" id="virtualbtn" onclick="gform()">REGISTER NOW</button>
             </div>
 
             <div class="vr">
@@ -474,7 +476,8 @@
 
             /********** Virtual Tour Register Now Button **********/
 
-            document.getElementById("virtualbtn").onclick = function(){
+            function gform()
+            {
                 location.href = "https://forms.gle/ayoH4Po6L2GmkV1T8"
             }
 
